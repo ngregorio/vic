@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--link rel="shortcut icon" href="favicon.png"-->
+    <title>SII mapas</title>
+
+    <meta name="robots" content="NOINDEX">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_blank">
+
+    <style type="text/css">
+      html,body { font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; }
+    </style>
+	
+	<link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" rel="stylesheet">
+    <link href="../css/mapas.css" rel="stylesheet"/>
+	
+</head>
+<body>
+
+<div style="height: 50vh; display: flex; align-items: center; justify-content: center;" id="loading">
+  <h1>Cargando <span class="fa fa-spinner fa-spin"></span></h1>
+</div>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const myLat = urlParams.get('lat');
+const myLng = urlParams.get('lng');
+const myLL = myLat + "," + myLng;
+</script>
+
+<div id="back"></div>
+<div id="control"></div>
+<div class="map map2" id="map2"></div>
+<div class="map map1" id="map1"></div>
+<div class="map crosshairDiv crosshair" id="crosshairOverlay"></div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+  var sc_project=true ? 502916 : 0;
+  var sc_partition=2;
+  var sc_invisible=1;
+</script>
+<!--script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script-->
+<!-- End of StatCounter Code -->
+
+<script type="text/javascript" language="javascript">
+  if (navigator.userAgent.indexOf('MSIE ') > -1 || navigator.userAgent.indexOf('Trident/') > -1) {
+	alert('Internet Explorer is not supported / no soportado.');
+  }
+</script>
+
+<script src="../js/mapasx.js" type="text/javascript"></script>
+  
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+<script>
+
+//Geoserver Comuna las Condes
+http://geoserver01.sii.cl:8080/geoserver/sii/wms?service=WMS&version=1.1.0&request=GetMap&layers=sii:BR_CART_LAS_CONDES_WMS&styles=&bbox=350494.487,6298931.0162,364955.6245,6307349.9115&width=768&height=447&srs=EPSG:32719&format=application/openlayers
+
+http://geoserver01.sii.cl:8080/geoserver/sii/wms?
+service=WMS
+&version=1.1.0
+&request=GetMap
+&layers=sii:BR_CART_LAS_CONDES_WMS
+&styles=
+&bbox=350494.487,6298931.0162,364955.6245,6307349.9115
+&width=768
+&height=447
+&srs=EPSG:32719
+&format=application/openlayers
+
+//maihue Comuna Antofagasta
+http://maihue.sii.cl/geoserver/sii/wms?service=WMS&version=1.1.0&request=GetMap&layers=sii:BR_CART_ANTOFAGASTA_WMS&styles=&bbox=333553.0149,7190931.8573,594856.2999,7449328.5001&width=768&height=759&srs=EPSG:32719&format=application/openlayers
+
+
+http://maihue.sii.cl/geoserver/sii/wms?
+service=WMS
+&version=1.1.0
+&request=GetMap
+&layers=sii:BR_CART_ANTOFAGASTA_WMS
+&styles=
+&bbox=333553.0149,7190931.8573,594856.2999,7449328.5001
+&width=768
+&height=759
+&srs=EPSG:32719
+&format=application/openlayers
+
+
+//autenticar maihue
+http://demo:demo@ursa.sii.cl/geoserver/sii/wms?
+
+
+//Funciona
+var wms_predio = L.tileLayer.wms('http://geoserver01.sii.cl:8080/geoserver/gwc/service/wms?', {
+layers: 'GRUPO_AH_DIBUJO',
+format: "image/png",styles:"PREDIOS_WMS_V0",
+transparent: "true"
+}).addTo(map);
+
+var wms_predio = L.tileLayer.wms('http://geoserver01.sii.cl:8080/geoserver/gwc/service/wms?', {
+service=WMS,
+version=1.1.0,
+request=GetMap,
+layers=sii:BR_CART_LAS_CONDES_WMS,
+bbox=350494.487,6298931.0162,364955.6245,6307349.9115,
+width=768,
+height=447,
+srs=EPSG:32719
+format=application/openlayers
+}).addTo(map);
+
+
+//maihue Comuna manzana predio
+http://maihue.sii.cl/geoserver/sii/wms?service=WMS&version=1.1.0&request=GetMap&layers=sii:BR_CART_CONSULTA_PREDIO&styles=&bbox=355319.1742,6300760.5716,355379.9342,6300785.9516&width=768&height=330&srs=EPSG:32719&format=application/openlayers&viewparams=cm:15152;mz:9004;pd:14
+
+http://maihue.sii.cl/geoserver/sii/wms?
+service=WMS
+&version=1.1.0
+&request=GetMap
+&layers=sii:BR_CART_CONSULTA_PREDIO
+&styles=
+&bbox=355319.1742,6300760.5716,355379.9342,6300785.9516
+&width=768
+&height=330
+&srs=EPSG:32719
+&format=application/openlayers
+&viewparams=cm:15152;mz:9004;pd:14
+
+
+</script>
+

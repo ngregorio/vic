@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>MISII</title>
+<link href="MISII-bbrr_archivos/animate.css" rel="stylesheet">
+<link href="MISII-bbrr_archivos/misii.css" rel="stylesheet">
+<link href="MISII-bbrr_archivos/jquery-ui.css" rel="stylesheet">
+<script type="text/javascript" src="MISII-bbrr_archivos/responsive_barranav.js"></script><link href="MISII-bbrr_archivos/bootstrap-sii.css" rel="stylesheet">
+<link href="MISII-bbrr_archivos/general.css" rel="stylesheet">
+<link href="MISII-bbrr_archivos/estilos.css" rel="stylesheet">
+<script type="text/javascript" src="MISII-bbrr_archivos/tramites_misii.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/funciones_misii_header.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/menu_hamburguesa.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/sidebar.js"></script>
+<script type="text/javascript" src="MISII-bbrr_archivos/launch-EN2b1e36bbb6d548dfa15c1b55cb71b120.js"></script><script src="MISII-bbrr_archivos/AppMeasurement.js" async=""></script></head>
+<body class="" style=""><nav id="my-menu" class="mm-menu mm-offcanvas mm-hasnavbar-top-1 mm-hasnavbar-bottom-1"><div class="mm-navbar mm-navbar-bottom mm-navbar-bottom-1 mm-navbar-size-1 mm-navbar-content-2"><a data-target="#mm-0" href="http://homer.sii.cl/" class="mm-next mm-fullsubopen"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a> <a href="#" id="closeMenu"><i class="fa fa-sign-out fa-flip-horizontal" aria-hidden="true"></i> Cerrar</a></div><div class="mm-navbar mm-navbar-top mm-navbar-top-1 mm-navbar-size-1"><div class="mm-search"><input placeholder="Buscar" type="text" autocomplete="off"></div></div><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-0"><div class="mm-navbar"><a class="mm-title">Menu</a></div><ul class="mm-listview"><ul class="titulo-navbar mm-listview"><li class="mm-title">Mi Sii</li></ul><li><a id="hmenu_home" class="btn_hamburguesa" href="#"><span>Inicio</span></a></li><li><a id="hmenu_datos_contribuyente" class="btn_hamburguesa" href="#"><span>Datos Personales y tributarios</span></a></li><li id="hmenu_tramites_en_linea" class="btn_hamburguesa"><a class="mm-next mm-fullsubopen" href="#mm-1" data-target="#mm-1"></a><span>Trámites en Línea</span></li><li><a id="hmenu_expediente" class="btn_hamburguesa" href="#"><span>Expediente Electrónico</span></a></li><li><a id="hmenu_comunicados_sii" class="btn_hamburguesa" href="#"><span>SII te informa</span></a></li></ul><div class="mm-noresultsmsg mm-hidden">No se encontraron resultados.</div></div><div class="mm-panel mm-hasnavbar mm-hidden" id="mm-1"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-0" data-target="#mm-0"></a><a class="mm-title" href="#mm-0">Trámites en Línea</a></div><ul class="mm-listview"><li><a target="_blank" href="http://www.sii.cl/servicios_online/1943-.html">Clave tributaria y Representantes electrónicos</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1031-.html">RUT e Inicio de actividades</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1125-.html">Actualización de información</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1037-.html">Peticiones Administrativas y otras Solicitudes</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/3598-.html">Autorización de Documentos Tributarios</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1039-.html">Factura electrónica</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1040-.html">Boletas de honorarios electrónicas</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1041-.html">Libros contables electrónicos</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1042-.html">Impuestos mensuales</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1043-.html">Declaraciones juradas</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1044-.html">Declaración de renta</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1045-.html">Infracciones, Pago de giros y Condonaciones</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1046-.html">Término de giro</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1047-.html">Situación tributaria</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/3140-.html">Herencias</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1048-.html">Avalúos y Contribuciones de bienes raíces</a></li><li><a target="_blank" href="http://www.sii.cl/servicios_online/1049-.html">Tasación fiscal de vehículos</a></li></ul></div></div></nav>
+<div id="my-wrapper" class="mm-page mm-slideout">
+<script type="text/javascript">misii_hamburguesa();</script><div id="misii" class="mm-page mm-slideout">
+<script type="text/javascript"></script><!-- CABECERA MOVIL-->
+
+<!-- FIN CABECERA MOVIL-->
+<!-- CABECERA DESKTOP-->
+<div class="web-sii cabecera hidden-xs">
+	<div class="header">
+		<nav class="navbar navbar-primary">
+			<div class="container">
+				<!-- MENU OPCIONES -->
+				<div id="opciones" class="navbar-collapse collapse" aria-expanded="false">
+					<ul class="nav navbar-nav" style="display: none;" id="sinAutenticacion">
+					   <li class="special"> <a href="https://misiir.sii.cl/cgi_misii/siihome.cgi">Ingresar a Mi Sii</a></li>
+					</ul>
+					<ul class="nav navbar-nav usuario" style="display: block;" id="conAutenticacion">
+					   <li>
+					      <span class="id">
+					         <script>imprimeRutEncabezado();</script>Rut: 15692963-8<br>
+					         <span id="lastConexion">Ultima visita 14/07/2020, a las 16:51:19 horas</span>
+					      </span>
+					   </li>
+					</ul>
+         			<span class="nav navbar-nav navbar-right hidden-xs" id="cerrar-sesion" style="display: block;">
+                       <script></script><a href="https://zeusr.sii.cl/cgi_AUT2000/autTermino.cgi">Cerrar Sesión</a>
+                    </span>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<h1 class="pull-left hidden-xs logo"><a href="http://homer.sii.cl/" title="Sii - Servicio de impuestos internos"><img src="MISII-bbrr_archivos/logo.jpg" alt="Sii - Servicio de impuestos internos"></a></h1>
+			<!-- MENU DESKTOP -->
+			<ul class="dropdown nav navbar-nav hidden-xs" id="main-menu">
+				<li style="padding-top: 2px;"><a role="button" href="https://misiir.sii.cl/cgi_misii/siihome.cgi">Mi Sii</a></li>
+   <li class="dropdown"><a href="http://www.sii.cl/servicios_online/">Servicios online <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+						<li><a href="http://www.sii.cl/servicios_online/1943-.html">Clave tributaria y Representantes electrónicos</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1031-.html">RUT e Inicio de actividades</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1125-.html">Actualización de información</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1037-.html">Peticiones Administrativas y otras Solicitudes</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/3598-.html">Autorización de Documentos Tributarios</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1039-.html">Factura electrónica</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1040-.html">Boletas de honorarios electrónicas</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1041-.html">Libros contables electrónicos</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1042-.html">Impuestos mensuales</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1043-.html">Declaraciones juradas</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1044-.html">Declaración de renta</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1045-.html">Infracciones, Pago de giros y Condonaciones</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1046-.html">Término de giro</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1047-.html">Situación tributaria</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/3140-.html">Herencias</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1048-.html">Avalúos y Contribuciones de bienes raíces</a></li>
+						<li><a href="http://www.sii.cl/servicios_online/1049-.html">Tasación fiscal de vehículos</a></li>
+                  </ul>
+             </li>
+				<li style="padding-top: 2px;"><a role="button" class="#" data-target="#" href="http://www.sii.cl/ayudas/">Ayuda</a></li>
+                       <li class="dropdown" role="presentation"> <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#" id="drop6"> Contacto <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                          <ul aria-labelledby="drop6" class="dropdown-menu" id="menu3">
+						<li><a href="https://zeus.sii.cl/dii_cgi/calidad/contactenos.cgi?tide_codigo=11&amp;opciones_tide=10o11"> <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i> Felicitaciones y sugerencias</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3045.html"> <i class="fa fa-hand-o-up fa-2x" aria-hidden="true"></i> Orientación y reclamos</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3047.html"> <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i> Denuncias sobre evasión</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3044.html"> <i class="fa fa-phone fa-2x" aria-hidden="true"></i> Mesa de ayuda</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/oficinas/3048-3049.html"> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Oficinas y horarios</a></li>
+                  </ul>
+             </li>
+			</ul>
+			<!-- FIN MENU DESKTOP --> 
+		</div>
+        <!-- RASTRO MIGA -->
+        <div class="container">
+           <ol class="breadcrumb" id="miga"><li><a href="http://homer.sii.cl/">Home</a></li><li><a href="https://misiir.sii.cl/cgi_misii/siihome.cgi">Mi SII</a></li><li class="active">Datos Personales y Tributarios</li></ol>
+        </div>
+        <!-- FIN RASTRO MIGA -->
+	</div>
+</div>
+<!-- FIN CABECERA DESKTOP -->
+<div id="box_profile" class="container">
+<div id="profile">
+<div id="box_icon_user">
+<div class="icon_user ic_profile_user" id="UserIconMiiSii"></div>
+<div id="profile_user_link" class="">
+		                        Ver más datos
+		                     </div>
+</div>
+<div id="info_profile">
+<div class="linea_titulo">
+<p class="info1">Nombre o razón social:
+									</p><p class="info2" name="nameCntr" id="nameCntr">NELSON ENRIQUE GREGORIO MAMANI </p><p></p>
+<a href="javascript:linkexterno(7)" title="Actualizar datos de identificación"><div class="box_edit_hr"><div class="ic_edit"></div></div></a>
+</div>
+<div class="linea_titulo"><p class="info1">RUT:
+									</p><p class="info2" name="rutCntr" id="rutCntr">15692963-8</p><p></p></div>
+<div class="linea_titulo">
+<p class="info1">Domicilio:
+									</p><p class="info2" name="domiCntr" id="domiCntr">VALLE DE AZAPA KM 8 #KM 8   LAS VIOLETAS COMUNA ARICA CIUDAD ARICA</p><p></p>
+<a href="javascript:linkexterno(5)" title="Actualizar datos de domicilio"><div class="box_edit_hr"><div class="ic_edit"></div></div></a>
+</div>
+<div class="linea_titulo" style="display: inline;" id="divmMailNoti">
+<p class="info1">Correo para notificaciones:
+									</p><p class="info2" name="mailCntrNoti" id="mailCntrNoti">nelson.gregorio@gmail.com</p><p></p>
+<a href="javascript:linkexterno(4)" title="Solicitar, actualizar o revocar correo para notificaciones."><div class="box_edit_hr"><div class="ic_edit"></div></div></a>
+</div>
+<div class="linea_titulo" style="display:none" id="divmMailcontacto">
+<p class="info1">Correo electrónico de contacto:
+									</p><p class="info2" name="mailCntr" id="mailCntr">NEGREGORIO@YAHOO.COM </p><p></p>
+<a href="javascript:linkexterno(3)" title="Modificar correo electrónico de contacto."><div class="box_edit_hr"><div class="ic_edit"></div></div></a>
+</div>
+<div class="icon_user_info" id="attrSGME" style="display:none" data-toggle="tooltip" title="Segmento SGME: MEDIANA EMPRESA">
+								MEDIANA EMPRESA
+							</div>
+</div>
+<div id="box_profile_excerpt" class="container visible-xs"><ul>
+<li>
+<b>Nombre o razón social:</b><p class="info2" id="nameCntrMovil" name="nameCntrMovil">NELSON ENRIQUE GREGORIO MAMANI </p>
+</li>
+<li>
+<b>RUT:</b><p class="info2" name="rutCntrMovil" id="rutCntrMovil">15692963-8</p>
+</li>
+</ul></div>
+</div>
+<div id="profile_buttons" style="height: 95px;"><div id="box_user_info">
+<div class="icon_user_info" id="attrSGGC" style="display:none" data-toggle="tooltip" title="Segmento SGCC:GRAN EMPRESA">
+								GRAN EMPRESA
+						</div>
+<div class="icon_user_info" id="attrSGME" style="display:none" data-toggle="tooltip" title="Segmento SGME: MEDIANA EMPRESA">
+								MEDIANA EMPRESA
+						</div>
+<div class="icon_user_info" id="attrSGMI" style="display:none" data-toggle="tooltip" title="Segmento SGMI:MICRO EMPRESA">
+								MICRO EMPRESA
+						</div>
+<div class="icon_user_info" id="attrSGPE" style="display:none" data-toggle="tooltip" title="Segmento SGPE:PERSONA ">
+								PERSONA
+						</div>
+<div class="icon_user_info" id="attrSGPM" style="display:none" data-toggle="tooltip" title="Segmento SGPM:PEQUEÑA EMPRESA">
+								PEQUEÑA EMPRESA
+						</div>
+</div></div>
+</div>
+<div class="clearfix"></div>
+<div class="container"><hr class="profile_line"></div>
+<div id="cuerpo" class="web-sii cuerpo container">
+<div id="box_left"><div id="sidebar"><div id="tools"><div id="box_daynight"><div class="font_title">Contraste</div><div class="clearfix"></div><label class="switch"><input id="contraste" type="checkbox" checked="checked"><span class="slider round"></span></label></div><div id="box_sizefont"><div class="font_title">Tamaño letra</div><div class="clearfix"></div><button id="font_down">A-</button><button id="font_up">A+</button></div></div><ul><a href="#" class="btn_sidebar" id="menu_home"><li class=""><div class="icono_sidebar"></div><div class="clearfix"></div><span>Inicio</span></li></a><a href="#" class="btn_sidebar" id="menu_datos_contribuyente"><li class="selected"><div class="icono_sidebar"></div><div class="clearfix"></div><span>Datos personales y tributarios</span></li></a><a href="#" class="btn_sidebar" id="menu_tramites_en_linea"><li><div class="icono_sidebar"></div><div class="clearfix"></div><span>Trámites en línea</span></li></a><a href="#" class="btn_sidebar" id="menu_expediente"><li><div class="icono_sidebar"></div><div class="clearfix"></div><span>Expediente Electrónico</span></li></a><a href="#" class="btn_sidebar" id="menu_comunicados_sii"><li><div class="icono_sidebar"></div><div class="clearfix"></div><span>SII te informa</span></li></a></ul><div class="clearfix"></div></div><script type="text/javascript">
+                  misii_sidebar();
+                  </script></div>
+<div id="box_right">
+<div id="box_home" class="ocultar" style="display: none;"><div class="icono_titulo_seccion wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;"></div><h1 class="title wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">Inicio Mi SII</h1><h2 class="subtitle wow fadeIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">              Accede fácil y cómodamente a tu información tributaria, donde además podrás realizar tus trámites en línea.</h2><div class="white_overlay"></div><div id="slider" class="wow fadeIn" data-wow-delay="600ms" style="border: 1px solid rgb(204, 204, 204); visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">	<div class="white_overlay"></div><a href="https://zeusr.sii.cl/cgi_AUT2000/autValidaMovilEmail.cgi" target="_blank"><img src="MISII-bbrr_archivos/banner-correo.jpg" class="img-responsive"></a>	</div>            <div class="subtitle2 wow fadeIn animated" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: fadeIn;">            A continuación te damos acceso directo a trámites de tu interés.</div>            <div id="contenidoObligaciones" class="wow fadeIn animated" data-wow-delay="900ms" style="visibility: visible; animation-delay: 900ms; animation-name: fadeIn;"></div>            <div id="contenido_home" class="grid" style="position: relative; height: 20px;">                    <div class="item wow fadeIn grid-item col-sm-12 col-lg-4" data-wow-delay="1000ms" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-delay: 1000ms; animation-name: fadeIn;">                        <div class="ic_lt_o"><div class="ic_box1"></div></div>                        <span><b>Acceso Directo </b></span><ul>                        <li><a href="http://www.sii.cl/servicios_online/1040-1287.html#-collapseOne" target="_blank">Emitir boleta de honorarios electrónica</a></li>                        <li><a href="javascript:linkexterno(9)">Pagar Contribuciones</a></li></ul>                    </div>                   <div class="item wow fadeIn grid-item col-sm-12 col-lg-4" data-wow-delay="1200ms" style="position: absolute; left: 0px; top: 10px; visibility: visible; animation-delay: 1200ms; animation-name: fadeIn;">                        <div class="ic_lt_o"><div class="ic_box4"></div></div>                        <span><a href="#" id="comunica_LinkAnot" onclick="javascript:goAnotacion()"><span class="taNota">Anotaciones Vigentes</span> <span class="naNota">(0)</span></a></span>                    </div>                    <div class="item wow fadeIn grid-item col-sm-12 col-lg-4" data-wow-delay="1100ms" style="position: absolute; left: 0px; top: 20px; visibility: visible; animation-delay: 1100ms; animation-name: fadeIn;">                        <div class="ic_lt_o"><div class="ic_box2"></div></div>                        <span><a href="#" id="comunica_LinkAnot" onclick="javascript:goSituacion()"><span class="taNota">Mensajes Informativos</span> <span id="nMensajesEmer" class="naNota">(0)</span></a></span>                   </div>               <div class="clearfix"></div>              </div></div>
+<div id="box_tramites_en_linea" class="ocultar" style="display: none;">
+<div class="icono_titulo_seccion"></div>
+<h1 class="title">Trámites en Línea</h1>
+<div id="contenido">
+<div class="modal fade" id="modalBhe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document"><div class="modal-content">
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" onclick="$('#modalBhe').hide();" aria-label="Close"><span aria-hidden="true">X</span></button></div>
+<div class="modal-body">
+<p style="text-align:center"><strong>TU BOLETA DE HONORARIOS CAMBIA</strong></p>
+<p style="text-align:justify">Te informamos que, a contar del <strong>1 de enero de 2020</strong>,
+ de acuerdo a la Ley 21.133, la retención y los Pagos Provisionales 
+Mensuales (PPM) que afectan a las boletas de honorarios aumentarán de 
+10% a 10,75%. Si la fecha de la boleta de honorarios es anterior al 1 de
+ enero de 2020, no aplicará; este aumento.</p>
+</div>
+<div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal" onclick="$('#modalBhe').hide();">Cerrar</button></div>
+</div></div></div>
+<div id="buscar" class="wow bounceInDown animated" data-wow-delay="150ms" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 150ms; animation-name: bounceInDown;"><form role="form"><div class="form-group"><div id="btn_buscar_menusol" class="btn_buscar_menusol" data-toggle="tooltip" data-placement="center" title="Solo escribe y tu búsqueda se actualizará automáticamente"><div class="ic_search"></div></div><input type="text" data-toggle="tooltip" data-placement="center" title="Buscar en Trámites en Línea" class="form-control" id="txt-search" placeholder="Buscar en Trámites en Línea" autocomplete="off"><div id="limpiar_busqueda" data-toggle="tooltip" data-placement="center" title="Limpiar búsqueda" style="display: none;"><div class="ic_eraser"></div></div><div class="clearfix"></div></div></form><div id="filter-records" style="display: none;"></div></div>
+<div class="clearfix"></div>
+<div id="box_tramites"><div class="panel-group acordeon" id="accordion_tramites" role="tablist" aria-multiselectable="true"><div class="panel panel-default" id="tlacc_1"> <div class="panel-heading" role="tab" id="acordeon_tramites_1">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse1" aria-expanded="false" aria-controls="acc_collapse1" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_1")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Clave tributaria y Representantes electrónicos     </a>   </h4> </div> <div id="acc_collapse1" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_1">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1943-1945.html","_blank")'>Clave tributaria               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1943-1946.html","_blank")'>Representantes electrónicos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_2"> <div class="panel-heading" role="tab" id="acordeon_tramites_2">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse2" aria-expanded="false" aria-controls="acc_collapse2" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_2")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>RUT e Inicio de actividades     </a>   </h4> </div> <div id="acc_collapse2" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_2">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1031-1032.html","_blank")'>Inscripción y obtención de N° de RUT               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1031-1033.html","_blank")'>Cédula RUT electrónica (e-RUT)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1031-1034.html","_blank")'>Inicio de actividades               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_3"> <div class="panel-heading" role="tab" id="acordeon_tramites_3">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse3" aria-expanded="false" aria-controls="acc_collapse3" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_3")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Actualización de información     </a>   </h4> </div> <div id="acc_collapse3" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_3">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/modificacionesiainternetui/","_blank" )'>Actualizar datos de identificación               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/modificacioncntrui/#/modificadomicilio","_blank"%20)'>Actualizar domicilio               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/modificacioncntrui/#/modificagiros%20","_blank"%20)'>Cambiar/ampliar giro o actividad económica               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/modificacioncntrui/#/modificasucursal","_blank"%20)'>Agregar/eliminar sucursales               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://zeusr.sii.cl/cgi_AUT2000/autValidaMovilEmail.cgi","_blank" )'>Cambiar email y/o teléfono móvil               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1125-1100.html","_blank")'>Notificación por correo electrónico               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/modificacionesiainternetui/#!/entidad/reorganizacion/seleccionar","_blank"%20)'>Informar reorganizaciones empresariales               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1125" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/como_se_hace_para/2813-2816.html","_blank" )'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_bulb"></div>                   </div>                   <p>Cómo se hace para..?</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_4"> <div class="panel-heading" role="tab" id="acordeon_tramites_4">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse4" aria-expanded="false" aria-controls="acc_collapse4" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_4")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Peticiones Administrativas y otras Solicitudes     </a>   </h4> </div> <div id="acc_collapse4" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_4">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1140.html","_blank")'>Peticiones Administrativas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1091.html","_blank")'>Regímenes tributarios               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-3729.html","_blank")'>Consultas sobre interpretación y aplicación de disposiciones tributarias               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/gabineteAdmInternet/consulta.html?form=ElusionIngreso","_blank" )'>Consultas sobre 26 bis del Código Tributario               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1097.html","_blank")'>Verificación de actividad               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-3582.html","_blank")'>Aviso de venta de vehículos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1111.html","_blank")'>Solicitud de contabilidad computacional               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1158.html","_blank")'>Impresoras fiscales               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1173.html","_blank")'>Máquinas registradoras               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1132.html","_blank")'>Dar aviso de pérdida y/o recuperación de cédula de identidad               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-1145.html","_blank")'>Certificados a presentar ante Administraciones Tributarias Extranjeras               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1037-3604.html","_blank")'>Presentación RAV/RAF y Recurso Jerárquico (RJ)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_5"> <div class="panel-heading" role="tab" id="acordeon_tramites_5">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse5" aria-expanded="false" aria-controls="acc_collapse5" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_5")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Autorización de Documentos Tributarios     </a>   </h4> </div> <div id="acc_collapse5" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_5">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/tibvsui/internet/","_blank" )'>Solicitar Autorización de Documentos Tributarios               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/copiaCertificadosBlobstoreInternet/#consulta","_blank"%20)'>Consultar Certificados Emitidos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_3598" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/preguntas_frecuentes/catastro/arbol_documentos_tributarios_1579.htm","_blank" )'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/manual_autoriacionDT.pdf","_blank" )'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_manuales"></div>                   </div>                   <p>Manuales y guias</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_6"> <div class="panel-heading" role="tab" id="acordeon_tramites_6">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse6" aria-expanded="false" aria-controls="acc_collapse6" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_6")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Factura electrónica     </a>   </h4> </div> <div id="acc_collapse6" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_6">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-1182.html","_blank")'>Conozca sobre Factura Electrónica               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-1183.html","_blank")'>Sistema de facturación gratuito del SII               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-1184.html","_blank")'>Sistema de facturación de mercado               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-3256.html","_blank")'>Registro de Compras y Ventas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-1185.html","_blank")'>Consultas DTE               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-3201.html","_blank")'>Registro de Aceptación o Reclamo de un DTE               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-1186.html","_blank")'>Consulta de contribuyentes               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/destacados/factura_electronica/cesion_facturas.html","_blank" )'> Publicación de Facturas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1039-3532.html","_blank")'>Boleta electrónica de ventas y servicios               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_7"> <div class="panel-heading" role="tab" id="acordeon_tramites_7">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse7" aria-expanded="false" aria-controls="acc_collapse7" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_7")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Boletas de honorarios electrónicas     </a>   </h4> </div> <div id="acc_collapse7" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_7">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1040-1287.html","_blank")'>Emisor de boleta de honorarios               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1040-1309.html","_blank")'>Boleta de prestación de servicios de terceros electrónica               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www.previsionsocial.gob.cl/sps/ley-honorarios/","_blank" )'>Cotizaciones previsionales               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/consultaestadof22ui/#!/validarCertificado","_blank"%20)'>Consulta comprobante cotizaciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1040-3752.html","_blank")'>Beneficio a Trabajadores Independientes               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_8"> <div class="panel-heading" role="tab" id="acordeon_tramites_8">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse8" aria-expanded="false" aria-controls="acc_collapse8" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_8")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Libros contables electrónicos     </a>   </h4> </div> <div id="acc_collapse8" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_8">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1041-1324.html","_blank")'>Inscripción Libros Contables Electrónicos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1041-1334.html","_blank")'>Envío de Documentos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1041" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2047-2379.html#-pf","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/como_se_hace_para/2833-.html#-cshp","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_bulb"></div>                   </div>                   <p>Cómo se hace para..?</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2047-2381.html#-todos","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_manuales"></div>                   </div>                   <p>Manuales y guias</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_9"> <div class="panel-heading" role="tab" id="acordeon_tramites_9">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse9" aria-expanded="false" aria-controls="acc_collapse9" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_9")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Impuestos mensuales     </a>   </h4> </div> <div id="acc_collapse9" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_9">   <div class="panel-body">       <div class="panel-group acordeon subacordeon" id="subacordeon_3264" role="tablist" aria-multiselectable="true">           <div class="panel panel-default">               <div class="panel-heading" role="tab" id="subacordeon_titulo_3264">                   <h4 class="panel-title">                       <a role="button" data-toggle="collapse" data-parent="#subacordeon_3264" href="#subacordeon_body_3264" class="arrow-click" aria-expanded="true" aria-controls="subacordeon_body_3264">                           <i class="ic_lt_o"><i class="circle_down_arrow"></i></i>                           <div class="title_subacc">                               <i class="fa fa-chevron-circle-down pull-right" aria-hidden="true"></i>Declaración mensual (F29)                           </div>                       </a>                   </h4>               </div>               <div class="panel-collapse collapse in" id="subacordeon_body_3264" role="tabpanel" aria-labelledby="subacordeon_titulo_3264" aria-expanded="true">                   <div class="panel-body">                       <ul>                               <li>                                   <a href='javascript:openTlUrl("https://www4.sii.cl/propuestaf29ui/internet/","_blank" )'>Declarar IVA (F29)                                   </a>                               </li>                               <li>                                   <a href='javascript:openTlUrl("https://www4.sii.cl/sifmConsultaInternet/index.html?dest=cifxx&amp;form=29","_blank" )'>Corregir o rectificar declaración                                   </a>                               </li>                               <li>                                   <a href='javascript:openTlUrl("../ayudas/ayudas_por_servicios/2055-2056.html","_blank" )'>Ayudas                                   </a>                               </li>                       </ul>                   </div>               </div>           </div>       </div>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3265.html","_blank")'>Declaración mensual (F50)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3253.html","_blank")'>Registro de Compras y Ventas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3267.html","_blank")'>Asistente para cálculos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3266.html","_blank")'>Consulta y seguimiento (F29 y F50)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/rfiInternet/?opcionPagina=ConsultaGiros","_blank" )'>Consultar y pagar giros               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3640.html","_blank")'>Solicitud de devoluciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-3744.html","_blank")'>Impuesto de Timbres y Estampillas (F24 y F24.1)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-1414.html","_blank")'>Importador de Libros de Compras y Ventas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1042-1435.html","_blank")'>Otras aplicaciones y Nóminas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_10"> <div class="panel-heading" role="tab" id="acordeon_tramites_10">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse10" aria-expanded="false" aria-controls="acc_collapse10" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_10")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Declaraciones juradas     </a>   </h4> </div> <div id="acc_collapse10" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_10">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1043-1451.html","_blank")'>Declaraciones juradas de IVA               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1043-1518.html","_blank")'>Declaraciones juradas de Renta               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1043-1562.html","_blank")'>Declaración jurada de impuesto de timbres y estampilla               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1043-1576.html","_blank")'>Declaraciones juradas de bienes raíces               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1043-1584.html","_blank")'>Registro de inversiones en el extranjero               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_11"> <div class="panel-heading" role="tab" id="acordeon_tramites_11">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse11" aria-expanded="false" aria-controls="acc_collapse11" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_11")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Declaración de renta     </a>   </h4> </div> <div id="acc_collapse11" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_11">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://alerce.sii.cl/dior_cgi/ren_mp/REN_MenusRenta.cgi?opcion=11","_blank" )'>Declarar Renta (F22)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://alerce.sii.cl/dior_cgi/ren_mp/REN_MenusRenta.cgi?opcion=1","_blank" )'>Corregir o rectificar declaración               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1044-2696.html","_blank")'>Consulta y seguimiento               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1044-2701.html","_blank")'>Asistentes para cálculos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1044-2712.html","_blank")'>Declaración jurada simple de cesión de beneficio de crédito por gastos en educación, art.55ter.               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/devolucion-anticipada/informacion","_blank" )'>Anticipo Devolución impuesto a la renta año tributario 2020               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1044-2718.html","_blank")'>Bonificación Ahorro Previsional Voluntario               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1044" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2200-2213.html#-pf","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2200-2385.html#-mi","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_mi"></div>                   </div>                   <p>Mas informacion</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_12"> <div class="panel-heading" role="tab" id="acordeon_tramites_12">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse12" aria-expanded="false" aria-controls="acc_collapse12" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_12")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Infracciones, Pago de giros y Condonaciones     </a>   </h4> </div> <div id="acc_collapse12" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_12">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1045-3212.html","_blank")'>Infracciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/pagoGiro/","_blank" )'>Pago de Giros               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_13"> <div class="panel-heading" role="tab" id="acordeon_tramites_13">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse13" aria-expanded="false" aria-controls="acc_collapse13" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_13")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Término de giro     </a>   </h4> </div> <div id="acc_collapse13" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_13">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/sistgiInternet/?opc=dec","_blank" )'>Declarar término de giro                <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/sistgiInternet/?opc=con","_blank" )'>Consultar declaración de término de giro                <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/consultaTGIInternet/","_blank" )'>Certificado de término de giro emitidos antes del 08/08/2016               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1046" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2233-2390.html#-pf","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/como_se_hace_para/2854-.html#-cshp","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_bulb"></div>                   </div>                   <p>Cómo se hace para..?</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_14"> <div class="panel-heading" role="tab" id="acordeon_tramites_14">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse14" aria-expanded="false" aria-controls="acc_collapse14" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_14")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Situación tributaria     </a>   </h4> </div> <div id="acc_collapse14" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_14">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://zeus.sii.cl/cvc/vdc/index.html","_blank" )'>Consultar timbraje de documentos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1047-1690.html","_blank")'>Consultar y revisar situación tributaria               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1047-1702.html","_blank")'>Carpeta tributaria electrónica               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1047-1714.html","_blank")'>Nóminas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>   </div> </div></div><div class="panel panel-default" id="tlacc_15"> <div class="panel-heading" role="tab" id="acordeon_tramites_15">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse15" aria-expanded="false" aria-controls="acc_collapse15" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_15")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Herencias     </a>   </h4> </div> <div id="acc_collapse15" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_15">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/dphiDeclaracionesInternet/","_blank" )'>Declarar Impuesto a las herencias Intestadas (F4423)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("https://www4.sii.cl/consdphiInternet/","_blank" )'>Consulta certificado de herencias intestadas (F4423)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_3140" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/3296-3297.html#-pf","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/3296-3505.html#-mi","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_mi"></div>                   </div>                   <p>Mas informacion</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_16"> <div class="panel-heading" role="tab" id="acordeon_tramites_16">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse16" aria-expanded="false" aria-controls="acc_collapse16" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_16")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Avalúos y Contribuciones de bienes raíces     </a>   </h4> </div> <div id="acc_collapse16" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_16">   <div class="panel-body">       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-2623.html","_blank")'>Contribuciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-3661.html","_blank")'>Beneficio para el adulto mayor               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-3657.html","_blank")'>Sobretasa modernización tributaria               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-3665.html","_blank")'>Transferencias de bienes raíces               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-2569.html","_blank")'>Avalúos y certificados               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/destacados/reavaluo/","_blank" )'>Reavalúo de bienes raíces               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1048-2573.html","_blank")'>Solicitudes y declaraciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/sitios_de_interes/aplicaciones_para_entidades_externas.html","_blank" )'>Aplicaciones para entidades externas               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1048" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2242-2466.html#-pf","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/como_se_hace_para/2859-.html#-cshp","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_bulb"></div>                   </div>                   <p>Cómo se hace para..?</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/ayudas_por_servicios/2242-2468.html#-mi","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_mi"></div>                   </div>                   <p>Mas informacion</p>                 </a>               </div>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/ayudas/folleteria/2983-.html#-folleteria","_blank"%20)'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_manuales"></div>                   </div>                   <p>Folleteria</p>                 </a>               </div>     </div>   </div> </div></div><div class="panel panel-default" id="tlacc_17"> <div class="panel-heading" role="tab" id="acordeon_tramites_17">   <h4 class="panel-title">     <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion_tramites" href="#acc_collapse17" aria-expanded="false" aria-controls="acc_collapse17" data-placement="center" title="Haz clic para expandir" onclick='javascript:gotoDiv("tlacc_17")'><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>Tasación fiscal de vehículos     </a>   </h4> </div> <div id="acc_collapse17" class="panel-collapse nivel2 collapse" role="tabpanel" aria-labelledby="acordeon_tramites_17">   <div class="panel-body">       <div class="panel-group acordeon subacordeon" id="subacordeon_3526" role="tablist" aria-multiselectable="true">           <div class="panel panel-default">               <div class="panel-heading" role="tab" id="subacordeon_titulo_3526">                   <h4 class="panel-title">                       <a role="button" data-toggle="collapse" data-parent="#subacordeon_3526" href="#subacordeon_body_3526" class="arrow-click" aria-expanded="true" aria-controls="subacordeon_body_3526">                           <i class="ic_lt_o"><i class="circle_down_arrow"></i></i>                           <div class="title_subacc">                               <i class="fa fa-chevron-circle-down pull-right" aria-hidden="true"></i>Consulta tasación de vehículos                           </div>                       </a>                   </h4>               </div>               <div class="panel-collapse collapse in" id="subacordeon_body_3526" role="tabpanel" aria-labelledby="subacordeon_titulo_3526" aria-expanded="true">                   <div class="panel-body">                       <ul>                               <li>                                   <a href='javascript:openTlUrl("https://www4.sii.cl/vehiculospubui/#/searchtasacion","_blank"%20)'>Consulta tasación de vehículos                                   </a>                               </li>                               <li>                                   <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/LIV2019_CODIGOS_HOMO.xlsx","_blank" )'>Consultar nuevo código                                   </a>                               </li>                               <li>                                   <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/guia_tasacion_vehicular_SII.pdf","_blank" )'>Revisa la guía de consulta                                   </a>                               </li>                       </ul>                   </div>               </div>           </div>       </div>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1049-2612.html","_blank")'>Tasación de vehículos (bajada de datos)               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1049-2618.html","_blank")'>Impuesto a emisiones contaminantes vehículos nuevos               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1049-3527.html","_blank")'>Resoluciones               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>       <p class="accordion_special">           <a href='javascript:openTlUrl("http://www.sii.cl/servicios_online/1049-3137.html","_blank")'>Declaración de Vehículos Motorizados               <i class="ic_lt_o"><i class="circle_right_arrow"></i></i>           </a>       </p>     <div id="ayudas_1049" class="agregar_ayudas"><p class="agregar_ayudas_titulo">Ayudas</p>               <div class="ayuda_icon link_listado_auxiliar">                 <a href='javascript:openTlUrl("http://www.sii.cl/preguntas_frecuentes/tasac_fiscal_vehiculos/arbol_faqs_tasac_fiscal_vehiculos_1551.htm","_blank" )'>                   <div class="box_ic_ayudas">                       <div class="ayudas_ic_pf"></div>                   </div>                   <p>Preguntas frecuentes</p>                 </a>               </div>     </div>   </div> </div></div></div></div>
+</div>
+</div>
+<div id="box_datos_contribuyente" class="ocultar" style="display: block;"><div class="icono_titulo_seccion"></div>        <h1 class="title">Datos personales y tributarios</h1><h2 class="subtitle">               </h2> <div id="contenido"><div class="panel-group acordeon" id="accordionCntrb" role="tablist" aria-multiselectable="true"><div class="panel panel-default" id="ctracc_1" onclick="javascript:gotoDiv('ctracc_1')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingOne"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse1Cntrb" class="arrow-click collapsed" aria-expanded="false" aria-controls="collapse1Cntrb"> <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Direcciones </a></h4></div><div id="collapse1Cntrb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">    <div id="divdirection" class="panel-body">    <div class="panel-item" id="dirOutPrint">    <h2> <span>Direcciones vigentes</span>    </h2>    <a class="print_icon pull-right hidden-print" href='javascript:printerC("collapse1Cntrb")'>    <span class="box_certificate"><div class="print_certificate"></div></span>    </a>                    <a type="button" class="btn btn-primary btn-sm screen hidden-print" href="javascript:linkexterno(8)">Agregar/eliminar sucursales</a>        <div id="no-more-tables"><div id="direccionesVigentes_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="direccionesVigentes_length"><label>Mostrar <select name="direccionesVigentes_length" aria-controls="direccionesVigentes" class="form-control input-sm"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>direcciones</label></div></div><div class="col-sm-6"><div id="direccionesVigentes_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control input-sm" placeholder="" aria-controls="direccionesVigentes"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="dirVigente tablaInterna table-striped table-bordered table-hover cf dataTable no-footer" id="direccionesVigentes" role="grid" aria-describedby="direccionesVigentes_info"><thead><tr role="row"><th class="text-center sorting_asc" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="direccionesVigentes" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Código Sucursal: Activar para ordenar la columna de manera descendente">Código Sucursal</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="direccionesVigentes" rowspan="1" colspan="1" aria-label="Tipo Dirección: Activar para ordenar la columna de manera ascendente">Tipo Dirección</th><th style="vertical-align: middle; width: 0px;" class="sorting" tabindex="0" aria-controls="direccionesVigentes" rowspan="1" colspan="1" aria-label="Dirección: Activar para ordenar la columna de manera ascendente">Dirección</th><th class="text-center sorting" style="width: 17px; vertical-align: middle;" tabindex="0" aria-controls="direccionesVigentes" rowspan="1" colspan="1" aria-label="A partir de: Activar para ordenar la columna de manera ascendente">A partir de</th></tr></thead><tbody><tr role="row" class="odd"><td class="text-center sorting_1" data-title="Código Sucursal">6444123    </td><td data-title="Tipo Dirección">DOMICILIO   </td><td data-title="Dirección">VALLE DE AZAPA KM 8 #KM 8   LAS VIOLETAS CIUDAD ARICA COMUNA ARICA REGION DE ARICA Y PARINAC     </td><td data-title="A partir de"> <span style="display: block;min-width: 70px;text-align: center;" class="span_block">01-04-2013</span></td></tr><tr role="row" class="even"><td class="text-center sorting_1" data-title="Código Sucursal">78319980    </td><td data-title="Tipo Dirección">SUCURSAL                                   </td><td data-title="Dirección">MARIN #574  DEPTO. #706  CIUDAD SANTIAGO COMUNA SANTIAGO REGION METROPOLITANA          </td><td data-title="A partir de"> <span style="display: block;min-width: 70px;text-align: center;" class="span_block">04-07-2017</span></td></tr><tr role="row" class="odd"><td class="text-center sorting_1" data-title="Código Sucursal">84567457    </td><td data-title="Tipo Dirección">SUCURSAL                                   </td><td data-title="Dirección">Pumol alto #SN    CIUDAD Pumol alto COMUNA FUTRONO REGION DE LOS RIOS     </td><td data-title="A partir de"> <span style="display: block;min-width: 70px;text-align: center;" class="span_block">24-06-2020</span></td></tr></tbody></table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="direccionesVigentes_info" role="status" aria-live="polite">Mostrando  del 1 al 3 de un total de 3 registros</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="direccionesVigentes_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="direccionesVigentes_previous"><a href="#" aria-controls="direccionesVigentes" data-dt-idx="0" tabindex="0">Anterior</a></li><li class="paginate_button active"><a href="#" aria-controls="direccionesVigentes" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="direccionesVigentes_next"><a href="#" aria-controls="direccionesVigentes" data-dt-idx="2" tabindex="0">Siguiente</a></li></ul></div></div></div></div>        </div>    </div>    <div class="panel-item" id="dirout">     </div></div></div></div>
+<div class="panel panel-default" id="ctracc_2" onclick="javascript:gotoDiv('ctracc_2')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingOnce"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse11Cntrb" class="arrow-click collapsed" aria-expanded="false"> <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Teléfonos y Correos electrónicos  </a></h4></div><div id="collapse11Cntrb" class="panel-collapse collapse " aria-expanded="false">            <div class="panel-body"><table class="tablaInterna"><tbody><tr class="text-left"><td><i class="fa "></i><b>Teléfono fijo</b> </td><td>No registra información</td></tr><tr><td> <a href="javascript:linkexterno(3)" title="Modificar teléfono móvil."><div class="box_edit"><div class="ic_edit"></div></div></a><b> Teléfono Móvil</b></td><td>93272393</td></tr><tr><td> <a href="javascript:linkexterno(3)" title="Modificar correo electrónico de contacto."><div class="box_edit"><div class="ic_edit"></div></div></a><b>Correo electrónico de contacto</b></td><td>NEGREGORIO@YAHOO.COM</td></tr><tr><td> <a href="javascript:linkexterno(4)" title="Solicitar, actualizar o revocar correo para notificaciones."><div class="box_edit"><div class="ic_edit"></div></div></a><b>Correo electrónico para notificaciones</b></td><td>nelson.gregorio@gmail.com</td></tr></tbody></table>        </div></div></div>
+<div class="panel panel-default" id="ctracc_3" onclick="javascript:gotoDiv('ctracc_3')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingTwo"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse2Cntrb" class="arrow-click collapsed" aria-expanded="false"> <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Inicio de actividades y término de giro    </a></h4></div><div id="collapse2Cntrb" class="panel-collapse collapse " aria-expanded="false">            <div class="panel-body">                <div id="no-more-tables" class="panel-item"><h2></h2>  <a class="print_icon pull-right hidden-print" href='javascript:printerC("collapse2Cntrb")'>    <span class="box_certificate"><div class="print_certificate"></div></span></a><table class="tablaInterna table-striped table-bordered table-hover cf"><thead><tr><th class="text-center">Fecha constitución </th><th class="text-center">Fecha Inicio de actividades<br> <a href="http://www.sii.cl/servicios_online/1031-.html">Rut e Inicio de actividades</a></th><th class="text-center">Término de giro  <br> <a href="http://www.sii.cl/servicios_online/1046-.html">Declarar o consultar Término de giro</a></th></tr></thead><tbody><tr><td class="text-center" data-title="Fecha constitución">NO</td><td class="text-center" data-title="Inicio actividades">30-10-1997</td><td class="text-center" data-title="Término giro">NO</td></tr></tbody></table>        </div>    </div></div></div><div class="panel panel-default" id="ctracc_6" onclick="javascript:gotoDiv('ctracc_6')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP10"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse6Cntrb" class="arrow-click collapsed" onclick="javascript:go2(21, 'girosout', 'miDocumentosAt')" aria-expanded="false"> <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Actividades económicas </a></h4></div><div id="collapse6Cntrb" class="panel-collapse collapse" aria-expanded="false">    <div id="divActEcos" class="panel-body">    <h2>Actividades económicas vigentes <a href="javascript:linkexterno(6);"><div class="box_edit_hr"><div class="ic_edit"></div></div></a>    </h2>    <a class="print_icon pull-right hidden-print" href='javascript:printerC("divActEcos")'>    <span class="box_certificate"><div class="print_certificate"></div></span>    </a>    <table class="tablaInterna table-striped table-bordered table-hover cf">    <thead>    <tr><th>Glosa descriptiva de actividades económicas</th><td colspan="3" class="text-justify">    No Registra</td>    </tr></thead></table>        <div id="no-more-tables">            <div id="tblIdGiros_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="tblIdGiros_length"><label>Mostrar <select name="tblIdGiros_length" aria-controls="tblIdGiros" class="form-control input-sm"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>actividades</label></div></div><div class="col-sm-6"><div id="tblIdGiros_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control input-sm" placeholder="" aria-controls="tblIdGiros"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="tablaInterna table-striped table-bordered table-hover cf dataTable no-footer" id="tblIdGiros" role="grid" aria-describedby="tblIdGiros_info">                <thead><tr role="row"><th style="vertical-align: middle; width: 0px;" class="sorting_asc" tabindex="0" aria-controls="tblIdGiros" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Actividad: Activar para ordenar la columna de manera descendente">Actividad</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblIdGiros" rowspan="1" colspan="1" aria-label="Código: Activar para ordenar la columna de manera ascendente">Código</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblIdGiros" rowspan="1" colspan="1" aria-label="Categoría tributaria: Activar para ordenar la columna de manera ascendente">Categoría tributaria</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblIdGiros" rowspan="1" colspan="1" aria-label="Afecta IVA: Activar para ordenar la columna de manera ascendente">Afecta IVA</th><th class="text-center sorting" style="width: 12px; vertical-align: middle;" tabindex="0" aria-controls="tblIdGiros" rowspan="1" colspan="1" aria-label="A partir de: Activar para ordenar la columna de manera ascendente">A partir de</th></tr></thead>                <tbody>        <tr role="row" class="odd"><td data-title="Actividad" class="sorting_1">ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONES INFORMATICAS</td><td class="text-center" data-title="Código">620200</td><td class="text-center" data-title="Categoría tributaria">   2</td><td class="text-center" data-title="Afecta IVA">NO</td><td class="text-center" data-title="A partir de"><span style="display: block;min-width: 70px;text-align: center;" class="span_block">30-10-1997</span></td></tr></tbody>    </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="tblIdGiros_info" role="status" aria-live="polite">Mostrando  del 1 al 1 de un total de 1 registros</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="tblIdGiros_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="tblIdGiros_previous"><a href="#" aria-controls="tblIdGiros" data-dt-idx="0" tabindex="0">Anterior</a></li><li class="paginate_button active"><a href="#" aria-controls="tblIdGiros" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="tblIdGiros_next"><a href="#" aria-controls="tblIdGiros" data-dt-idx="2" tabindex="0">Siguiente</a></li></ul></div></div></div></div></div><a href="#girosout" class="btn btn-info hidden-print " style="display:none;" data-toggle="collapse">Actividades económicas eliminadas <i class="fa fa-chevron-down"></i></a></div>    <div class="panel-body collapse" id="girosout">         </div></div></div>
+<div class="panel panel-default" id="ctracc_7" onclick="javascript:gotoDiv('ctracc_7')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP11"><h4 class="panel-title" card-header180'=""><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse7Cntrb" class="arrow-click collapsed" onclick="javascript:go2(225, 'divMissocies', 'divMissociesAt')" aria-expanded="false"> <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Sociedades a las que pertenece el contribuyente</a></h4></div>    <div id="collapse7Cntrb" class="panel-collapse collapse" aria-expanded="false" style="">        <div id="divMissocies" class="panel-body">        </div><div id="divMissociesAt" class="text-center" style="display: none; vertical-align:middle"><img src="MISII-bbrr_archivos/ajax-loader.gif" alt="Imagen Cargando"><strong> Cargando...</strong></div></div></div>
+<div class="panel panel-default" id="ctracc_9" onclick="javascript:gotoDiv('ctracc_9')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP13"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse13Cntrb" class="arrow-click collapsed" aria-expanded="false">  <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Características del contribuyente </a></h4></div><div id="collapse13Cntrb" class="panel-collapse collapse" aria-expanded="false">    <div id="divActEcos" class="panel-body">    <h2>Características    </h2>    <a class="print_icon pull-right hidden-print" href='javascript:printerC("collapse13Cntrb")'>    <span class="box_certificate"><div class="print_certificate"></div></span>    </a>        <div id="no-more-tables">            <table class="tablaInterna table-striped table-bordered table-hover cf">                <thead><tr>                    <th class="text-center" style="vertical-align:middle">Descripción</th>                    <th class="text-center" style="vertical-align:middle">A partir de</th>                </tr></thead>                <tbody><tr><td data-title="Actividad">PERSONA</td><td class="text-center" data-title="A partir de">24-03-2009</td></tr>        </tbody>    </table></div></div></div>    </div>
+<div class="panel panel-default" id="ctracc_11" onclick="javascript:gotoDiv('ctracc_11')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP12"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse10Cntrb" class="arrow-click collapsed" aria-expanded="false">  <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Documentos tributarios autorizados  </a></h4></div><div id="collapse10Cntrb" class="panel-collapse collapse" aria-expanded="false">    <div id="divActEcos" class="panel-body">        <div id="no-more-tables">            <div id="tblUltimosDoc_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="tblUltimosDoc_length"><label>Mostrar <select name="tblUltimosDoc_length" aria-controls="tblUltimosDoc" class="form-control input-sm"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>Documentos</label></div></div><div class="col-sm-6"><div id="tblUltimosDoc_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control input-sm" placeholder="" aria-controls="tblUltimosDoc"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="tablaInterna table-striped table-bordered table-hover cf dataTable no-footer" id="tblUltimosDoc" role="grid" aria-describedby="tblUltimosDoc_info">                <thead><tr role="row"><th class="text-center sorting_asc" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblUltimosDoc" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Tipo: Activar para ordenar la columna de manera descendente">Tipo</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblUltimosDoc" rowspan="1" colspan="1" aria-label="Autorizado hasta el Nº: Activar para ordenar la columna de manera ascendente">Autorizado hasta el Nº</th><th class="text-center sorting" style="vertical-align: middle; width: 0px;" tabindex="0" aria-controls="tblUltimosDoc" rowspan="1" colspan="1" aria-label="Fecha Autorización: Activar para ordenar la columna de manera ascendente">Fecha Autorización</th></tr></thead>                <tbody>        <tr role="row" class="odd"><td data-title="Actividad" class="sorting_1">BOLETAS DE HONORARIOS</td><td class="text-center" data-title="Código">50</td><td class="text-center" data-title="A partir de">31-10-1997</td></tr><tr role="row" class="even"><td data-title="Actividad" class="sorting_1">BOLETAS DE HONORARIOS ELECTRONICAS</td><td class="text-center" data-title="Código">65</td><td class="text-center" data-title="A partir de">16-05-2018</td></tr></tbody>    </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="tblUltimosDoc_info" role="status" aria-live="polite">Mostrando  del 1 al 2 de un total de 2 registros</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="tblUltimosDoc_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="tblUltimosDoc_previous"><a href="#" aria-controls="tblUltimosDoc" data-dt-idx="0" tabindex="0">Anterior</a></li><li class="paginate_button active"><a href="#" aria-controls="tblUltimosDoc" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="tblUltimosDoc_next"><a href="#" aria-controls="tblUltimosDoc" data-dt-idx="2" tabindex="0">Siguiente</a></li></ul></div></div></div></div>    </div></div></div></div>
+<div class="panel panel-default" id="ctracc_10" onclick="javascript:gotoDiv('ctracc_10')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP14"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse14Cntrb" onclick="javascript:callMessageBBRR()" class="arrow-click" aria-expanded="true">  <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Bienes Raíces  </a></h4></div><div id="collapse14Cntrb" class="panel-collapse collapse in" aria-expanded="true" style="">    <div id="divPropiedades" class="panel-body">
+
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<div class="panel-body">
+<div id="no-more-tables">
+<table class="table table-striped table-bordered table-hover cf">
+<thead class="cf">
+	<tr>
+	<th class="text-center" style="width:15%;vertical-align:middle"> Rol </th>
+	<th style="vertical-align:middle">Comuna </th>
+	<th style="vertical-align:middle">Dirección </th>
+	<th class="text-center" style="width:15%;vertical-align:middle">Cuotas Vencidas por pagar </th>
+	<th class="text-center" style="width:15%;vertical-align:middle">Cuotas Vigentes por pagar </th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+	<td data-title="Rol" class="text-center">00155-00101</td>
+	<td data-title="Comuna">COPIAPO</td>
+	<td data-title="Dirección">RODRIGUEZ 390 209 DONA TRINIDAD</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+	<tr>
+	<td data-title="Rol" class="text-center">00071-00151</td>
+	<td data-title="Comuna">FUTRONO</td>
+	<td data-title="Dirección">PUMOL HJ 16</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+	<tr>
+	<td data-title="Rol" class="text-center">00467-00124</td>
+	<td data-title="Comuna">SANTIAGO</td>
+	<td data-title="Dirección">MARIN 574 DP 706</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+	<tr>
+	<td data-title="Rol" class="text-center">00467-00310</td>
+	<td data-title="Comuna">SANTIAGO</td>
+	<td data-title="Dirección">MARIN 574 BX 211</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+	<tr>
+	<td data-title="Rol" class="text-center">00598-00001</td>
+	<td data-title="Comuna">SANTIAGO</td>
+	<td data-title="Dirección">SANTA VICTORIA 554 LC 1</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+	<tr>
+	<td data-title="Rol" class="text-center">00610-00617</td>
+	<td data-title="Comuna">SANTIAGO</td>
+	<td data-title="Dirección">PORTUGAL 564 BD 05</td>
+	<td data-title="Cuotas Vencidas" class="text-center">NO</td>
+	<td data-title="Cuotas Vigentes" class="text-center">NO</td>
+	</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bloque bloque-azul">
+	<ul>
+	<li>
+		<a href="javascript:linkexterno(13)">Ver listado de más propiedades del contribuyente</a>
+	</li>
+	<li>
+		<a href="https://www4.sii.cl/solicitudesbienesraicesui/#/solicitud/contribuyente/">Ingresar solicitud de Bienes Raíces</a>
+	</li>
+	<li>
+		<a href="javascript:linkexterno(12)">Listado de Propiedades  para el Pago de Contribuciones</a>
+	</li>
+	<li>
+		<a href="http://www.sii.cl/servicios_online/1048-.html">Ir al menú para pagar contribuciones o hacer otras consultas</a>
+	</li>
+	<li>
+		<a href="https://www4.sii.cl/mapasui/internet/#/contenido/index.html">Cartografía Dígital SII Mapas</a>
+	</li>
+	</ul>
+</div>
+	
+</div>
+</div>    </div>
+<div class="panel panel-default" id="ctracc_12" onclick="javascript:gotoDiv('ctracc_12')"><div class="corner_top"></div><div class="panel-heading" role="tab" id="headingP13"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordionCntrb" href="#collapse9Cntrb" class="arrow-click collapsed" aria-expanded="false">  <div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div> Oficina del SII para trámites presenciales   </a></h4></div>    <div id="collapse9Cntrb" class="panel-collapse collapse" aria-expanded="false" style="">            <div class="panel-body">                <div><table class="tablaInterna table-striped table-bordered table-hover cf"><thead colspan="1"><tr><th class="text-center" style="width:33%;vertical-align:middle">Oficina para trámites presenciales</th><td class="text-justify">OFICINA: ARICA<br>ARTURO PRAT 305, ARICA</td></tr></thead><tbody></tbody></table>        </div>    </div></div></div>
+</div></div></div>
+<div id="box_comunicados_sii" class="ocultar" style="display: none;">
+<div class="icono_titulo_seccion"></div>
+<h1 class="title ">SII te informa</h1>
+<h2 class="subtitle"></h2>
+<div id="contenido"><div class="panel-group acordeon" id="accordionComu" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default" id="comacc_5" onclick="javascript:gotoDiv('comacc_5')">
+<div class="panel-heading" role="tab" id="comunicaSII5"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu05" class="arrow-click collapsed" aria-expanded="false" aria-controls="collapseComu05"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+<div class="ic_lt_o"><div class="ic_acc_box4"></div></div>
+<div class="txt_icono_titulo">Anotaciones Vigentes</div></a></h4></div>
+<div id="collapseComu05" class="panel_comunicaciones panel-collapse collapse" aria-labelledby="comunicaSII5" role="tabpanel" aria-expanded="false"><div class="panel-body" id="divAnotaciones"><td>No registra información</td><td></td><td></td><td></td><td></td></div></div>
+</div>
+<div class="panel panel-default" id="comacc_1" onclick="javascript:gotoDiv('comacc_1')">
+<div class="panel-heading" role="tab" id="comunica1"><h4 class="panel-title"><a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordionComu" href="#collapseComu01" onclick="javascript:call_option(201)" aria-expanded="false" aria-controls="collapseComu01"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+<div class="ic_lt_o"><div class="ic_acc_box2"></div></div>
+<div class="txt_icono_titulo">Notificaciones</div></a></h4></div>
+<div id="collapseComu01" class="panel_comunicaciones panel-collapse collapse" aria-labelledby="comunica1" role="tabpanel" aria-expanded="false"><div class="panel-body" id="notiNotif"><div class="panel-item"></div></div></div>
+</div>
+<div class="panel panel-default" id="comacc_2" onclick="javascript:gotoDiv('comacc_2')">
+<div class="panel-heading" role="tab" id="comunica2"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu02" class="arrow-click collapsed" onclick="javascript:call_option(200)" aria-expanded="false" aria-controls="collapseComu02"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+							                     Cartas y correos informativos 
+							                  </a></h4></div>
+<div id="collapseComu02" class="panel_comunicaciones panel-collapse collapse " aria-labelledby="comunica2" role="tabpanel" aria-expanded="false"><div class="panel-body" id="notiCorrespondencia"><div class="panel-item"></div></div></div>
+</div>
+<div class="panel panel-default" id="comacc_3" onclick="javascript:gotoDiv('comacc_3')">
+<div class="panel-heading" role="tab" id="comunica3"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu03" class="arrow-click collapsed" onclick="javascript:callajaxJson('', 14)" aria-expanded="false" aria-controls="collapseComu03"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+							                     Visitas del SII a sus locales 
+							                  </a></h4></div>
+<div id="collapseComu03" class="panel_comunicaciones panel-collapse collapse" aria-labelledby="comunica3" role="tabpanel" aria-expanded="false"><div class="panel-body"><div class="panel-item" id="lasVisitas"></div></div></div>
+</div>
+<div class="panel panel-default" id="comacc_4" onclick="javascript:gotoDiv('comacc_4')">
+<div class="panel-heading" role="tab" id="comunica4"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu04" onclick="javascript:callMessage()" class="arrow-click collapsed" aria-expanded="false" aria-controls="collapseComu04"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+							                     Mensajes informativos 
+							                  </a></h4></div>
+<div id="collapseComu04" class="panel_comunicaciones panel-collapse collapse" aria-labelledby="comunica4" role="tabpanel" aria-expanded="false"><div class="panel-body" id="contenido-mis-InBox"><div class="panel-item"></div></div></div>
+</div>
+<div class="panel panel-default" id="comacc_6" onclick="javascript:gotoDiv('comacc_6')">
+<div class="panel-heading" role="tab" id="comunica6"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu06" class="arrow-click collapsed" aria-expanded="false" aria-controls="collapseComu06"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+							                     Respuestas a solicitudes por Ley de Transparencia
+							                  </a></h4></div>
+<div id="collapseComu06" class="panel_comunicaciones panel-collapse collapse " aria-labelledby="comunica6" role="tabpanel" aria-expanded="false"><div class="panel-body"><div class="panel-item">
+<p class="text-justify">
+															Si desea consultar sus Solicitudes de información, seleccione Ingresar
+														</p>
+<p class="text-center"><strong><a class="btn btn-warning btn-lg font-weight-bold" role="button" href="javascript:linkexterno(2)">Ingresar</a></strong></p>
+</div></div></div>
+</div>
+<div class="panel panel-default" id="comacc_8" onclick="javascript:gotoDiv('comacc_8')">
+<div class="panel-heading" role="tab" id="comunica8"><h4 class="panel-title"><a data-toggle="collapse" role="button" data-parent="#accordionComu" href="#collapseComu08" class="arrow-click collapsed" aria-expanded="false" aria-controls="collapseComu08"><div class="box_arrow"><div class="box_content_arrow"><div class="ic_arrow"></div></div></div>
+                                                 Autorizado a pagar Formulario 29 hasta el día 20 de este mes por internet
+                                              </a></h4></div>
+<div id="collapseComu08" class="panel_comunicaciones panel-collapse collapse " aria-labelledby="comunica8" role="tabpanel" aria-expanded="false"><div class="panel-body"><div class="panel-item"><p class="text-justify">
+                                                            En base a la
+ Información que dispone este Servicio, este mes Usted puede declarar y 
+pagar sus Impuestos mensuales hasta el día 20 del presente mes por 
+internet.
+                                                        </p></div></div></div>
+</div>
+</div></div>
+</div>
+<div id="box_expediente" class="ocultar" style="display: none;">
+<div class="icono_titulo_seccion"></div>
+<h1 class="title">
+								Expediente Electrónico
+							</h1>
+<h2 class="subtitle">
+								Ingresa a tu expediente electrónico en esta sección
+							</h2>
+<div id="contenido">
+<div class="panel-group acordeon" id="tl_link_expediente"><div class="panel panel-default"><div class="panel-heading"><a href="javascript:linkexterno(1)" id="linkSee"><h4 class="panel-title">
+													Sistema de Expediente Electrónico
+													<div class="box_arrow"><div class="box_vcontent_arrow"><div class="ic_arrow"></div></div></div>
+</h4></a></div></div></div>
+<div class="agregar_ayudas">
+<p class="agregar_ayudas_titulo">Ayudas</p>
+<a href="http://www.sii.cl/destacados/reforma_tributaria/sistema_expediente_electronico.pdf" target="_blank" class="ayuda_icon"><div class="ic_expediente_ayudas"></div>
+<p class="text-center">Manuales y Guías</p></a>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div id="misii_overlay"><div id="impresion_carta">
+<div id="misii_overlay_close" onclick="cerrar_misii_overlay()"><i class="fa fa-times"></i></div>
+<div id="carta">
+<div class="centrar">
+<div id="box_titulo">
+<div class="ic_mail"><i class="fa fa-envelope"></i></div>
+<h1>Asunto: <b><p id="carta_asunto">Actualización de fechas de pago</p></b>
+</h1>
+<h2>Noviembre 8, 2019</h2>
+<div class="clearfix"></div>
+</div>
+<div id="remitente">
+<p><b>Desde: </b><span>aiglesias@sii.cl</span></p>
+<p><b>Para: </b><span>servicio@sii.cl</span></p>
+</div>
+<div class="clearfix"></div>
+<div id="body_carta"></div>
+</div>
+<div id="footer_carta"><div class="centrar">
+<p><i class="fa fa-paperclip"></i><span>Documentos adjuntos:</span></p>
+<div class="clearfix"></div>
+<a href="#"><div class="box_adjunto">
+<div class="icono_carta"><i class="fa fa-file"></i></div>
+<div class="texto_carta">
+<span>Resolución 118</span><i class="fa fa-download"></i>
+</div>
+<div class="corner"></div>
+</div></a><a href="#"><div class="box_adjunto">
+<div class="icono_carta"><i class="fa fa-file"></i></div>
+<div class="texto_carta">
+<span>Resolución 120</span><i class="fa fa-download"></i>
+</div>
+<div class="corner"></div>
+</div></a><a href="#"><div class="box_adjunto">
+<div class="icono_carta"><i class="fa fa-file"></i></div>
+<div class="texto_carta">
+<span>Circular 118</span><i class="fa fa-download"></i>
+</div>
+<div class="corner"></div>
+</div></a><a href="#"><div class="box_adjunto">
+<div class="icono_carta"><i class="fa fa-file"></i></div>
+<div class="texto_carta">
+<span>Certificado</span><i class="fa fa-download"></i>
+</div>
+<div class="corner"></div>
+</div></a><div class="clearfix"></div>
+</div></div>
+</div>
+</div></div>
+<div id="recarga_sesion" class="modal fade modal_verde"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">
+<img src="MISII-bbrr_archivos/ic_loading_2.gif" style="width: 35px;float: left;"><h3>Actualizando última sesión..</h3>
+</div></div></div></div>
+</div>
+<script src="MISII-bbrr_archivos/wow.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/masonboxes.js"></script><script type="text/javascript">mostrarPie()</script><div class="web-sii pie">
+  <footer>
+    <div class="container">
+      <div class="row hidden-xs">
+        <div class="col-sm-12 col-md-2-5">
+           <h3 class="hidden-xs">Valores y fechas</h3>
+           <div class="btn btn-block navbar-toggle hidden-sm hidden-md hidden-lg arrow-click" data-target=".pie01" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Valores y fechas</div>
+           <ul class="list-unstyled collapse navbar-collapse pie01">
+                               <li><a href="http://www.sii.cl/valores_y_fechas/uf/uf2020.htm">UF</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/dolar/dolar2020.htm">Dólar</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/utm/utm2020.htm">UTM-UTA-IPC</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/renta/datos_valores_renta.html">Datos y valores de Renta</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/iva/datos_valores_iva.html">Datos y valores de IVA</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/otros_valores/otros_valores.html">Otros valores</a></li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-2-5">
+           <h3 class="hidden-xs">Normativa y legislación</h3>
+           <div class="btn btn-block navbar-toggle hidden-sm hidden-md hidden-lg arrow-click" data-target=".pie02" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Normativa y legislación</div>
+           <ul class="list-unstyled collapse navbar-collapse pie02">
+                               <li><a href="http://www.sii.cl/normativa_legislacion/circulares/2020/indcir2020.htm">Circulares</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/resoluciones/2020/res_ind2020.htm">Resoluciones</a></li>
+                               <li><a href="https://www4.sii.cl/consultaProyectosNormativosInternet/#Inicio">Consulta pública de normas</a></li>
+                               <li><a href="https://www3.sii.cl/normaInternet/">Administrador de contenido normativo</a></li>
+                               <li><a href="https://www4.sii.cl/acjui/internet/#/instancia/1">Administrador de contenido de Jurisprudencia</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/legislacion_tributaria.html">Legislación tributaria y convenios internacionales</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/jurisprudencia_y_tribunales.html">Jurisprudencia y tribunales</a></li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-2-5">
+           <h3 class="hidden-xs">Redes sociales</h3>
+           <div class="btn btn-block navbar-toggle hidden-sm hidden-md hidden-lg arrow-click" data-target=".pie03" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Redes sociales</div>
+           <ul class="list-unstyled collapse navbar-collapse pie03">
+                               <li><a href="https://www.facebook.com/impuestosinternoschile/">Facebook</a></li>
+                               <li><a href="https://twitter.com/SII_Chile">Twitter</a></li>
+                               <li><a href="https://www.youtube.com/user/sii/">Youtube</a></li>
+                               <li><a href="http://www.sii.cl/redes_sociales/rss.html">RSS</a></li>
+                               <li><a href="http://www.sii.cl/ayudas/apps/">APP´s</a></li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-2-5">
+           <h3 class="hidden-xs">Sitios de interés</h3>
+           <div class="btn btn-block navbar-toggle hidden-sm hidden-md hidden-lg arrow-click" data-target=".pie04" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Sitios de interés</div>
+           <ul class="list-unstyled collapse navbar-collapse pie04">
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_appdoc.html">Aplicaciones y documentos</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_wutiles.html">Web útiles</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_sgob.html">Sitios de gobierno relacionados</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_orgrelacionados.html">Organismos relacionados</a></li>
+                               <li><a href="http://www.sii.cl/asuntos_internacionales/">Intercambios de Información - Estándar CRS</a></li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-2-5">
+           <h3 class="hidden-xs">Sobre el SII</h3>
+           <div class="btn btn-block navbar-toggle hidden-sm hidden-md hidden-lg arrow-click" data-target=".pie05" data-toggle="collapse"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Sobre el SII</div>
+           <ul class="list-unstyled collapse navbar-collapse pie05">
+                               <li><a href="http://www.sii.cl/sobre_el_sii/nuestro_servicio.htm">Nuestro Servicio</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/trabaja_con_nosotros.html">Trabaja con nosotros</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/gestion_y_estadisticas.html">Gestión y estadísticas</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/terminos_sitio_web.html">Términos de uso del sitio web</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/recomendaciones_seguridad.htm">Recomendaciones de seguridad</a></li>
+           </ul>
+        </div>
+      </div>
+      <div class="row visible-xs">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="heading01">
+                    <h4 class="panel-title">
+                       <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true" aria-controls="collapse01"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Valores y fechas</a>
+                    </h4>
+                 </div>
+                 <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                    <div class="panel-body">
+                       <ul class="list-unstyled">
+                               <li><a href="http://www.sii.cl/valores_y_fechas/uf/uf2020.htm">UF</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/dolar/dolar2020.htm">Dólar</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/utm/utm2020.htm">UTM-UTA-IPC</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/renta/datos_valores_renta.html">Datos y valores de Renta</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/iva/datos_valores_iva.html">Datos y valores de IVA</a></li>
+                               <li><a href="http://www.sii.cl/valores_y_fechas/otros_valores/otros_valores.html">Otros valores</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="heading02">
+                    <h4 class="panel-title">
+                       <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="true" aria-controls="collapse02"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Normativa y legislación</a>
+                    </h4>
+                 </div>
+                 <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                    <div class="panel-body">
+                       <ul class="list-unstyled">
+                               <li><a href="http://www.sii.cl/normativa_legislacion/circulares/2020/indcir2020.htm">Circulares</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/resoluciones/2020/res_ind2020.htm">Resoluciones</a></li>
+                               <li><a href="https://www4.sii.cl/consultaProyectosNormativosInternet/#Inicio">Consulta pública de normas</a></li>
+                               <li><a href="https://www3.sii.cl/normaInternet/">Administrador de contenido normativo</a></li>
+                               <li><a href="https://www4.sii.cl/acjui/internet/#/instancia/1">Administrador de contenido de Jurisprudencia</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/legislacion_tributaria.html">Legislación tributaria y convenios internacionales</a></li>
+                               <li><a href="http://www.sii.cl/normativa_legislacion/jurisprudencia_y_tribunales.html">Jurisprudencia y tribunales</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="heading03">
+                    <h4 class="panel-title">
+                       <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="true" aria-controls="collapse03"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Redes sociales</a>
+                    </h4>
+                 </div>
+                 <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                    <div class="panel-body">
+                       <ul class="list-unstyled">
+                               <li><a href="https://www.facebook.com/impuestosinternoschile/">Facebook</a></li>
+                               <li><a href="https://twitter.com/SII_Chile">Twitter</a></li>
+                               <li><a href="https://www.youtube.com/user/sii/">Youtube</a></li>
+                               <li><a href="http://www.sii.cl/redes_sociales/rss.html">RSS</a></li>
+                               <li><a href="http://www.sii.cl/ayudas/apps/">APP´s</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="heading04">
+                    <h4 class="panel-title">
+                       <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse04" aria-expanded="true" aria-controls="collapse04"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Sitios de interés</a>
+                    </h4>
+                 </div>
+                 <div id="collapse04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading04">
+                    <div class="panel-body">
+                       <ul class="list-unstyled">
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_appdoc.html">Aplicaciones y documentos</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_wutiles.html">Web útiles</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_sgob.html">Sitios de gobierno relacionados</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/sinteres_orgrelacionados.html">Organismos relacionados</a></li>
+                               <li><a href="http://www.sii.cl/asuntos_internacionales/">Intercambios de Información - Estándar CRS</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+              <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="heading05">
+                    <h4 class="panel-title">
+                       <a class="arrow-click collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse05" aria-expanded="true" aria-controls="collapse05"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>Sobre el SII</a>
+                    </h4>
+                 </div>
+                 <div id="collapse05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05">
+                    <div class="panel-body">
+                       <ul class="list-unstyled">
+                               <li><a href="http://www.sii.cl/sobre_el_sii/nuestro_servicio.htm">Nuestro Servicio</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/trabaja_con_nosotros.html">Trabaja con nosotros</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/gestion_y_estadisticas.html">Gestión y estadísticas</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/terminos_sitio_web.html">Términos de uso del sitio web</a></li>
+                               <li><a href="http://www.sii.cl/sobre_el_sii/recomendaciones_seguridad.htm">Recomendaciones de seguridad</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+         </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="MISII-bbrr_archivos/general.js"></script>
+<script src="MISII-bbrr_archivos/functions.js"></script>
+<script type="text/javascript" src="MISII-bbrr_archivos/buscador.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/funciones_misii_footer.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/jquery-ui.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/obligaciones.js"></script><script type="text/javascript" src="MISII-bbrr_archivos/misii.js"></script><script type="text/javascript">
+                        	
+                            DatosCntrNow = {"codigoError":0,"descripcionError":"OK","sysdate":null,"contribuyente":{"codigoError":0,"descripcionError":"Contribuyente existe","sysdate":null,"rut":"15692963","dv":"8","nombres":"NELSON ENRIQUE","apellidoPaterno":"GREGORIO","apellidoMaterno":"MAMANI","razonSocial":null,"tipoContribuyenteCodigo":"1","tipoContribuyenteDescripcion":"PERSONA NATURAL","subtipoContribuyenteCodigo":"111","subtipoContribuyenteDescrip":"PERSONA NATURAL CHILENA","paisCodigo":"997","sexo":"M","numeroPasaporte":null,"fechaConstitucion":null,"fechaNacimiento":"1971-03-31 00:00:00.0","fechaDefuncion":null,"eMail":"NEGREGORIO@YAHOO.COM","fechaCreaRegistroCntr":null,"fechaModiRegistroCntr":"2013-04-01 16:39:01.0","telefonoMovil":"93272393","fechaTerminoGiro":null,"autorizadoDeclararDia20":"N","fechaInicioActividades":"1997-10-30 00:00:00.0","unidadOperativaCodigo":"01101","unidadOperativaDescripcion":"ARICA","unidadOperativaDireccion":"ARTURO PRAT 305, ARICA","unidadOperativaGcCodigo":null,"unidadOperativaGcDescripcion":null,"unidadOperativaGcDireccion":null,"capitalPorEnterar":null,"capitalEnterado":null,"fIndVerificacion":null,"fechaCreaRegistroNeg":null,"fechaModiRegistroNeg":null,"segmentoCodigo":"SGPE","segmentoDescripcion":"PERSONA","personaEmpresa":"PERSONA","glosaActividad":null,"tipoActuacion":null,"descripcionActuacion":null,"declaraTG":"No","personaMiSii":"S"},"direcciones":[{"codigoError":0,"descripcionError":"Contribuyente posee dirección","sysdate":null,"codigo":"6444123","comunaCodigo":"1101","comunaDescripcion":"ARICA","regionCodigo":"15","regionDescripcion":"REGION DE ARICA Y PARINAC","tipoDomicilioCodigo":"1","tipoDomicilioDescripcion":"DOMICILIO","manzana":null,"predio":null,"calle":"VALLE DE AZAPA KM 8","numero":"KM 8","bloque":null,"departamento":null,"villaPoblacion":"LAS VIOLETAS","ciudad":"ARICA","fax":null,"telefono":null,"fuente":null,"tipoPropiedadCodigo":null,"tipoPropiedadDescripcion":null,"rutPropietario":null,"dvPropietario":null,"canon":null,"areaTelefono":null,"areaFax":"0","codigoPostal":null,"casilla":null,"correo":null,"mail":null,"fechaModiRegistro":"2013-04-01 16:39:01.0"}],"atributos":[{"rut":15692963,"dv":"8","atrCodigo":"NOTI","descAtrCodigo":"CONTRIBUYENTE ES NOTIFICADO POR CORREO ELECTRONICO","fechaInicio":"29-03-2016","valor":"nelson.gregorio@gmail.com","fechaTermino":null,"usuarioActivacion":"USZ1","usuarioDesactivacion":null,"eliminado":null,"fechaCreacion":"29-03-2016"},{"rut":15692963,"dv":"8","atrCodigo":"SGPE","descAtrCodigo":"PERSONA","fechaInicio":"24-03-2009","valor":"ACTUALIZADO 06-04-2020","fechaTermino":null,"usuarioActivacion":"S6080300","usuarioDesactivacion":null,"eliminado":null,"fechaCreacion":"24-03-2009"}],"alertas":[]}
+                            DatosCntrAler = {"codigoError":0,"descripcionError":null,"sysdate":null,"alertas":[]}
+                            DatosActeco = [{"codigoError":0,"descripcionError":"Contribuyente posee actividades económicas","sysdate":null,"codigo":"620200","descripcion":"ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONES INFORMATICAS","categoriaTributaria":"2","afectoIva":"N","fechaInicio":"30-10-1997"}]</script><script type="text/javascript"></script><script src="MISII-bbrr_archivos/registro_visitas.js" data-remove="false"></script>
+
+
+<div id="mm-blocker" class="mm-slideout"></div><div class="web-sii cabecera hidden-sm hidden-md hidden-lg mm-slideout">
+	<div class="header">
+		<nav class="navbar navbar-primary">
+			<div class="container"> 
+				<!-- BOTONES MOVIL -->
+				<div class="navbar-header">
+					<button class="navbar-toggle pull-left" type="button" id="abrirMenu"> <span class="sr-only">Mostrar menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+					<h1 class="hidden-sm hidden-md hidden-lg"><a href="http://homer.sii.cl/" title="Sii - Servicio de impuestos internos"><img src="MISII-bbrr_archivos/logo.jpg" alt="Sii - Servicio de impuestos internos"></a></h1>
+					<button aria-expanded="false" data-target="#opciones_movil" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span aria-hidden="true" class="glyphicon glyphicon-user"></span></button>
+					<div class="border"></div>
+				</div>
+				<!-- MENU OPCIONES -->
+				<div id="opciones_movil" class="navbar-collapse collapse" aria-expanded="false">
+					<ul class="nav navbar-nav" style="display: none;" id="sinAutenticacionMovil">
+						<li class="special"> <a href="https://misiir.sii.cl/cgi_misii/siihome.cgi">Ingresar a Mi Sii</a></li>
+					</ul>
+					<ul class="nav navbar-nav usuario" style="display: block;" id="conAutenticacionMovil">
+					   <li>
+					      <span class="id">
+					         <script>imprimeRutEncabezadoMovil();</script>Rut: 15692963-8 &nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://zeusr.sii.cl/cgi_AUT2000/autTermino.cgi">Cerrar Sesión</a><br>
+					         <span id="lastConexionMovil">Ultima visita 14/07/2020, a las 16:51:19 horas</span>
+					      </span>
+					   </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- MENU MOVIL -->
+		<nav id="my-menu" style="display:none;">
+			<ul>
+				  <li><a href="https://misiir.sii.cl/cgi_misii/siihome.cgi">Mi Sii</a></li>
+             <li><span>Servicios online</span>
+                  <ul>
+						<li><span>Clave tributaria y Representantes electrónicos</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1943-1945.html">Clave tributaria</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1943-1946.html">Representantes electrónicos</a></li>
+							</ul>
+						</li>
+						<li><span>RUT e Inicio de actividades</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1031-1032.html">Inscripción y obtención de N° de RUT</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1031-1033.html">Cédula RUT electrónica (e-RUT)</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1031-1034.html">Inicio de actividades</a></li>
+							</ul>
+						</li>
+						<li><span>Actualización de información</span>
+							<ul>
+                               <li><a href="https://www4.sii.cl/modificacionesiainternetui/">Actualizar datos de identificación</a></li>
+                               <li><a href="https://www4.sii.cl/modificacioncntrui/#/modificadomicilio">Actualizar domicilio</a></li>
+                               <li><a href="https://www4.sii.cl/modificacioncntrui/#/modificagiros">Cambiar/ampliar giro o actividad económica</a></li>
+                               <li><a href="https://www4.sii.cl/modificacioncntrui/#/modificasucursal">Agregar/eliminar sucursales</a></li>
+                               <li><a href="https://zeusr.sii.cl/cgi_AUT2000/autValidaMovilEmail.cgi">Cambiar email y/o teléfono móvil</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1125-1100.html">Notificación por correo electrónico</a></li>
+                               <li><a href="https://www4.sii.cl/modificacionesiainternetui/#!/entidad/reorganizacion/seleccionar">Informar reorganizaciones empresariales</a></li>
+							</ul>
+						</li>
+						<li><span>Peticiones Administrativas y otras Solicitudes</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1140.html">Peticiones Administrativas</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1091.html">Regímenes tributarios</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-3729.html">Consultas sobre interpretación y aplicación de disposiciones tributarias</a></li>
+                               <li><a href="https://www4.sii.cl/gabineteAdmInternet/consulta.html?form=ElusionIngreso">Consultas sobre 26 bis del Código Tributario</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1097.html">Verificación de actividad</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-3582.html">Aviso de venta de vehículos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1111.html">Solicitud de contabilidad computacional</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1158.html">Impresoras fiscales</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1173.html">Máquinas registradoras</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1132.html">Dar aviso de pérdida y/o recuperación de cédula de identidad</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-1145.html">Certificados a presentar ante Administraciones Tributarias Extranjeras</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1037-3604.html">Presentación RAV/RAF y Recurso Jerárquico (RJ)</a></li>
+							</ul>
+						</li>
+						<li><span>Autorización de Documentos Tributarios</span>
+							<ul>
+                               <li><a href="https://www4.sii.cl/tibvsui/internet/">Solicitar Autorización de Documentos Tributarios</a></li>
+                               <li><a href="https://www4.sii.cl/copiaCertificadosBlobstoreInternet/#consulta">Consultar Certificados Emitidos</a></li>
+							</ul>
+						</li>
+						<li><span>Factura electrónica</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-1182.html">Conozca sobre Factura Electrónica</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-1183.html">Sistema de facturación gratuito del SII</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-1184.html">Sistema de facturación de mercado</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-3256.html">Registro de Compras y Ventas</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-1185.html">Consultas DTE</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-3201.html">Registro de Aceptación o Reclamo de un DTE</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-1186.html">Consulta de contribuyentes</a></li>
+                               <li><a href="http://www.sii.cl/destacados/factura_electronica/cesion_facturas.html"> Publicación de Facturas</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1039-3532.html">Boleta electrónica de ventas y servicios</a></li>
+							</ul>
+						</li>
+						<li><span>Boletas de honorarios electrónicas</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1040-1287.html">Emisor de boleta de honorarios</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1040-1309.html">Boleta de prestación de servicios de terceros electrónica</a></li>
+                               <li><a href="https://www.previsionsocial.gob.cl/sps/ley-honorarios/">Cotizaciones previsionales</a></li>
+                               <li><a href="https://www4.sii.cl/consultaestadof22ui/#!/validarCertificado">Consulta comprobante cotizaciones</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1040-3752.html">Beneficio a Trabajadores Independientes</a></li>
+							</ul>
+						</li>
+						<li><span>Libros contables electrónicos</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1041-1324.html">Inscripción Libros Contables Electrónicos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1041-1334.html">Envío de Documentos</a></li>
+							</ul>
+						</li>
+						<li><span>Impuestos mensuales</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3264.html">Declaración mensual (F29)</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3265.html">Declaración mensual (F50)</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3253.html">Registro de Compras y Ventas</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3267.html">Asistente para cálculos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3266.html">Consulta y seguimiento (F29 y F50)</a></li>
+                               <li><a href="https://www4.sii.cl/rfiInternet/?opcionPagina=ConsultaGiros">Consultar y pagar giros</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3640.html">Solicitud de devoluciones</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-3744.html">Impuesto de Timbres y Estampillas (F24 y F24.1)</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-1414.html">Importador de Libros de Compras y Ventas</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1042-1435.html">Otras aplicaciones y Nóminas</a></li>
+							</ul>
+						</li>
+						<li><span>Declaraciones juradas</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1043-1451.html">Declaraciones juradas de IVA</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1043-1518.html">Declaraciones juradas de Renta</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1043-1562.html">Declaración jurada de impuesto de timbres y estampilla</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1043-1576.html">Declaraciones juradas de bienes raíces</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1043-1584.html">Registro de inversiones en el extranjero</a></li>
+							</ul>
+						</li>
+						<li><span>Declaración de renta</span>
+							<ul>
+                               <li><a href="https://alerce.sii.cl/dior_cgi/ren_mp/REN_MenusRenta.cgi?opcion=11">Declarar Renta (F22)</a></li>
+                               <li><a href="https://alerce.sii.cl/dior_cgi/ren_mp/REN_MenusRenta.cgi?opcion=1">Corregir o rectificar declaración</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1044-2696.html">Consulta y seguimiento</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1044-2701.html">Asistentes para cálculos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1044-2712.html">Declaración jurada simple de cesión de beneficio de crédito por gastos en educación, art.55ter.</a></li>
+                               <li><a href="https://www4.sii.cl/devolucion-anticipada/informacion">Anticipo Devolución impuesto a la renta año tributario 2020</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1044-2718.html">Bonificación Ahorro Previsional Voluntario</a></li>
+							</ul>
+						</li>
+						<li><span>Infracciones, Pago de giros y Condonaciones</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1045-3212.html">Infracciones</a></li>
+                               <li><a href="https://www4.sii.cl/pagoGiro/">Pago de Giros</a></li>
+							</ul>
+						</li>
+						<li><span>Término de giro</span>
+							<ul>
+                               <li><a href="https://www4.sii.cl/sistgiInternet/?opc=dec">Declarar término de giro </a></li>
+                               <li><a href="https://www4.sii.cl/sistgiInternet/?opc=con">Consultar declaración de término de giro </a></li>
+                               <li><a href="https://www4.sii.cl/consultaTGIInternet/">Certificado de término de giro emitidos antes del 08/08/2016</a></li>
+							</ul>
+						</li>
+						<li><span>Situación tributaria</span>
+							<ul>
+                               <li><a href="https://zeus.sii.cl/cvc/vdc/index.html">Consultar timbraje de documentos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1047-1690.html">Consultar y revisar situación tributaria</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1047-1702.html">Carpeta tributaria electrónica</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1047-1714.html">Nóminas</a></li>
+							</ul>
+						</li>
+						<li><span>Herencias</span>
+							<ul>
+                               <li><a href="https://www4.sii.cl/dphiDeclaracionesInternet/">Declarar Impuesto a las herencias Intestadas (F4423)</a></li>
+                               <li><a href="https://www4.sii.cl/consdphiInternet/">Consulta certificado de herencias intestadas (F4423)</a></li>
+							</ul>
+						</li>
+						<li><span>Avalúos y Contribuciones de bienes raíces</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-2623.html">Contribuciones</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-3661.html">Beneficio para el adulto mayor</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-3657.html">Sobretasa modernización tributaria</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-3665.html">Transferencias de bienes raíces</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-2569.html">Avalúos y certificados</a></li>
+                               <li><a href="http://www.sii.cl/destacados/reavaluo/">Reavalúo de bienes raíces</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1048-2573.html">Solicitudes y declaraciones</a></li>
+                               <li><a href="http://www.sii.cl/sitios_de_interes/aplicaciones_para_entidades_externas.html">Aplicaciones para entidades externas</a></li>
+							</ul>
+						</li>
+						<li><span>Tasación fiscal de vehículos</span>
+							<ul>
+                               <li><a href="http://www.sii.cl/servicios_online/1049-3526.html">Consulta tasación de vehículos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1049-2612.html">Tasación de vehículos (bajada de datos)</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1049-2618.html">Impuesto a emisiones contaminantes vehículos nuevos</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1049-3527.html">Resoluciones</a></li>
+                               <li><a href="http://www.sii.cl/servicios_online/1049-3137.html">Declaración de Vehículos Motorizados</a></li>
+							</ul>
+						</li>
+                  </ul>
+             </li>
+             <li><a href="http://www.sii.cl/ayudas/">Ayuda</a></li>
+             <li><span>Contacto</span>
+                  <ul>
+						<li><a href="https://zeus.sii.cl/dii_cgi/calidad/contactenos.cgi?tide_codigo=11&amp;opciones_tide=10o11">Felicitaciones y sugerencias</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3045.html">Orientación y reclamos</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3047.html">Denuncias sobre evasión</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/3042-3044.html">Mesa de ayuda</a></li>
+						<li><a href="http://www.sii.cl/ayudas/asistencia/oficinas/3048-3049.html">Oficinas y horarios</a></li>
+                  </ul>
+             </li>
+			</ul>
+		</nav>
+		<!-- FIN MENU MOVIL --> 
+	</div>
+</div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="modal fade modal_verde" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true" style="padding-top: 15%; overflow-y: visible; display: none;"><div class="modal-dialog modal-m"><div class="modal-content"><div class="modal-body"><img src="MISII-bbrr_archivos/ic_loading_2.gif" style="width: 35px;float: left;"><h3>Cargando...</h3></div></div></div></div><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_sii_0" name="destination_publishing_iframe_sii_0_name" style="display: none; width: 0px; height: 0px;" src="MISII-bbrr_archivos/dest5.htm" class="aamIframeLoaded"></iframe></body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>SII | Servicio de Impuestos Internos</title>
+<script src="../js/responsive_barranav.js" type="text/javascript" ></script>
+<link href="../css/bootstrap-sii.min.css" rel="stylesheet">
+<link href="../css/general.css" rel="stylesheet">
+<link href="../css/estilos.css" rel="stylesheet">
+<link href="../css/responsive.table.css" rel="stylesheet">
+<link href="../css/basic.css" rel="stylesheet">
+<link href="../css/ayuda.css" rel="stylesheet">
+<link href="../css/maps.css" rel="stylesheet">
+
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/datatables.min.js"></script>
+
+<!--script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script-->
+<!--link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/-->
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<link rel="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
+
+</head>
+
+<body>
+
+
+<div id="mymap"></div>
+
+<div>
+    <a id="monuments" href="#">Monuments</a>
+    <a id="gardens" href="#">Gardens</a>
+</div>
+
+<script>
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('mymap').setView([48.858190, 2.294470], 12);
+
+var monumentsLayerGroup = false;
+var gardensLayerGroup = false;
+var layerControl = false;
+
+// add an OpenStreetMap tile layer
+var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+document.getElementById('gardens').onclick = function(evt) {
+    
+    if(gardensLayerGroup === false) {       
+        // Tuileries: 48.864183, 2.326120
+        // Champs de Mars: 48.855232, 2.299642
+        // Luxembourg: 48.846958, 2.337150
+        gardensLayerGroup = L.layerGroup()
+        .addLayer(L.marker([ 48.864183, 2.326120 ]))
+        .addLayer(L.marker([ 48.855232, 2.299642 ]))
+        .addLayer(L.marker([ 48.846958, 2.337150 ]))
+        .addTo(map);
+    }
+        
+    if(layerControl === false) {
+        layerControl = L.control.layers().addTo(map);
+    }
+    
+    layerControl.addOverlay(gardensLayerGroup, "Gardens");
+
+         
+    return false;
+}  
+
+
+
+document.getElementById('monuments').onclick = function(evt) {
+
+    if(monumentsLayerGroup === false) {
+        // Eiffel Tower: 48.858543, 2.294492
+        // Louvre: 48.860315, 2.338222
+        // Arc de Triomphe: 48.873978, 2.295007
+        monumentsLayerGroup = L.layerGroup()
+        .addLayer(L.marker([ 48.858543, 2.294492 ]))
+        .addLayer( L.marker([ 48.860315, 2.338222 ]))
+        .addLayer(L.marker([ 48.873978, 2.295007 ]))
+        .addTo(map);    
+    }
+    
+      
+    if(layerControl === false) {
+        layerControl = L.control.layers().addTo(map);
+    }
+    
+    layerControl.addOverlay(monumentsLayerGroup, "Monuments");
+         
+    return false;
+}  
+
+
+</script>
+
+
+
+</body>
+</html>
