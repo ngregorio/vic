@@ -1,0 +1,49 @@
+	.clearfix{
+		clear: both;
+		float: none;
+	}
+	.float_right{
+		float: right;
+		margin-top: -2px;
+	}
+	#contenido .box_tooltip{
+	    position: relative;
+	    overflow: hidden;
+	    cursor: help;
+	    margin-right: 11px;
+	    font-size: 21px;
+	    opacity: 1;
+	    color: #eb510d;
+	}
+	#contenido .box_tooltip:hover{
+		overflow: visible;
+	}
+	#contenido .box_tooltip .tooltip{
+	    border: 1px solid #5dafe4;
+	    background-color: white;
+	    position: absolute;
+	    right: 30px;
+	    top: 3px;
+	    z-index: 99999;
+	    width: 150px;
+	    height: auto;
+	    display: block;
+	    opacity: 1;
+	    padding: 10px 13px;
+	    text-align: justify;
+	    color: #333;
+	    box-shadow: 0 0 3px #7a8e9a;
+	    -moz-box-shadow: 0 0 3px #7a8e9a;
+	    -webkit-box-shadow: 0 0 3px #7a8e9a;
+	    cursor: 
+	}
+	#contenido .acordeon ul{
+
+	}
+	#contenido .acordeon ul li{
+		margin: 5px 0 10px 0;
+	}
+	#contenido .acordeon ul li a{
+		width: calc(100% - 40px);
+    	float: left;
+	}

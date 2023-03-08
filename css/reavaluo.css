@@ -1,0 +1,322 @@
+.fa-2xa {
+	font-size: 2em;
+	/* color: #e6500a; */
+	margin: 2%;
+	position: relative;
+    top: 1px;
+    display: inline-block;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: left;
+    background: green;
+    padding: 15px;
+    color: white;
+    margin: -6px 0 -3px -5px;
+    border-radius: 5px 0 0 0;
+}	
+.gris_medio {
+  background: #f5f5f5;	
+}
+.img_ppal{
+	width: 70%!important;
+}
+@media (max-width: 414px) {
+
+.img_ppal{
+	width: 100%!important;
+  }
+.chica {
+ font-size: 12px;	
+} 
+}
+
+.glyphicon_new {
+    font-size: 17px;
+    color: #fff;
+}
+.mod_beneficios018_rav_info {
+    min-height: 120px!important;
+}
+.tooltip.top .tooltip-inner{
+   background:#0064a0;
+   font-size:14px;
+}
+
+.mod_beneficios018_rav_ppal {
+   padding: 1%;
+   margin: -14px 16px 9px 16px;
+   text-align: center;
+   border: solid 1px #ccc;
+   border-radius: 13px;
+} 
+	   
+.mod_beneficios018_rav:hover {
+   /*background: #002C48;*/
+   background: #bbb;
+   color: #FFF;
+}
+
+.mod_beneficios018_rav a:hover {
+   display: block;
+   width: auto;
+   height: auto;
+   color:#FFF;
+}
+	   
+p.parrafo_bajo {
+   padding: 1%;
+   text-align: justify;
+   font-weight: bold;
+}
+
+div#modalrav2019 {
+   background: #00000063;
+}
+	   
+	      
+.mod_impuestoterritorial a {
+  color: #ebbd0d;
+  margin: 2% 0 0% 0;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.IMPUG h5 {
+  padding: 2%;
+  font-weight: bold;
+  color: #e6500a;
+  margin: -35px 0 0 25px;
+}
+.mod_impuestoterritorial a:hover {
+  color: #fff;
+  margin: 2% 0 0% 0;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+  
+.big-text > h1 {
+  color: #002C48;
+  font-size: 3.8em;
+}
+	  
+.item_constri {
+  margin: 25px 0px 25px 36px;
+  /* background: red; */
+  width: 80%;
+  text-align: center;
+}
+	          
+		  
+.text_derecha {
+	margin-top: 14%;
+}
+
+div#modal_avaluo {
+	background: rgba(0, 0, 0, 0.5);
+}
+.item_constri img {
+	margin: 0 0 0 23px;
+}
+
+.mod_contribuciones {
+	padding-top: 18px;
+}
+
+
+div#modalrav2018 {
+	background: rgba(0, 0, 0, 0.5);
+}
+.jumbotron.text-center > h2 {
+	font-size: 1.7em;
+}
+
+div#myModal_rav_noagricola {
+	background: url(img/img_no_agricola.jpg);
+}
+div#myModal_rav_agricola {
+	background: url(img/img_noagricola.jpg);
+}
+.mod_reavaluo {
+	padding: 5px;
+	margin-bottom: 50px;
+	background: #f2f2f2;
+
+	-webkit-box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+	box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+	overflow:hidden;
+}
+.mod_reavaluo2 {
+	padding: 5px;
+	margin-bottom: 50px;
+	background: #f2f2f2;
+	min-height: 300px;
+	margin-top: 50px;
+	-webkit-box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+	box-shadow: 4px 7px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.text-h3 ul {
+	margin-top: 50px;
+}
+
+.mod_herramientas a {
+	color: #002C48;
+	display: block;
+	font-weight:bold;
+	text-align:center;
+	margin-top:20px;
+	min-height:70px;
+	padding:5%;
+	border:1px solid #002C48;
+}
+.mod_herramientas a:hover {
+	color: #888;
+	min-height:70px;
+	display: block;
+	box-shadow: 3px 3px  #888;
+	font-weight:bold;
+	text-align:center;
+	margin-top:20px;
+	padding:5%;
+	border:1px solid  #888;
+}
+
+a.linkcasos {
+	color: #FFF;
+	padding: 5px;
+	margin-top: 20px;
+	display: block;
+	border: 1px solid #376b81;
+}
+
+a.linkcasos:hover {
+	color: #FFCC00;
+	padding: 0;
+	margin-top: 20px;
+	display: block;
+	padding: 5px;
+	border: 1px solid #376b81;
+	box-shadow: 3px 3px #fff;
+}
+
+.mod_contribuciones a {
+	padding: 2% 1% 2% 3%;
+	display: block;
+	color: #EA530C;
+	font-weight: bold;
+	border: 1px solid #ff8d37;
+	margin-top: 5px;
+}
+
+
+.mod_contribuciones a:hover {
+	display: block;
+	color: #888;
+	border: 1px solid #888;
+	box-shadow:3px 3px #888;
+}
+
+.web-sii .carousel-indicators li.active, .web-sii .rslides_tabs li.rslides_here {
+	border: 0;
+	background: #FFF;;
+}
+
+.web-sii .carousel-indicators {
+	right: 0%;
+}
+	         
+.ejemplos_vid {
+  background: #FFF;
+  padding: 2%;
+  align-items: center;
+  /* margin: 2% 3% 3% -5%; */
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.lateral_herramientas {
+  /* padding: 2%; */
+  margin: 8% 0 0 0;
+  /* background: #f2f2f2; */
+  /* display: block; */
+  /* overflow: hidden; */
+}
+	   
+.rav018_textobanner {
+   padding: 5% 0 0 0;
+   margin: 5% 0% 0% 0%;
+}
+.siconocesadulto {
+   float: left;
+   width: 50%;
+}
+.btn_adulto {
+   float: right;
+   background: red;
+   display: block;
+}.btn_adulto {
+   float: right;
+   display: block;
+}
+
+
+.mod_beneficios018_rav {
+
+    border: 1px solid #CCC;
+
+    /* padding: 10% 10% 0% 10%; */
+    min-height: 50px;
+    background: #FFF;
+    font-size: 0.9em;
+    box-shadow: #f5f5f5 2px 1px 0px 0px;
+    border-radius: 5px;
+	
+}
+	
+.col-xs-12.col-md-4.modulo .mod_beneficios018_rav {
+    min-height: 150px;
+}
+
+
+.web-sii .glyphiconx {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: left;
+    background: #706f6f;
+	/*#0f69b4;*/
+    padding: 16px;
+    color: white;
+    margin: -5px 0 -3px -5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.web-sii .glyphiconxx {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: left;
+    background: #0f69b4;
+    padding: 16px;
+    color: white;
+    margin: -5px 0 -3px -5px;
+    border-radius: 5px 0 0 5px;
+}

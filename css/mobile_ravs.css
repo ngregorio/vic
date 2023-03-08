@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	
+	 .modal-content {
+	         width: 100%;
+	         margin: auto;
+	         text-align:justify;
+	      }
+	
+	.web-sii .jumbotron p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 200;
+}
+	
+	.title_jumbotron.visible-xs{
+		margin: -80px 0 0 0;	
+		}
+	
+	p.bajada_texto_rav{
+		font-size:10px;
+		margin:0px;
+		}
+		
+		
+	.jumbotron.text-center .rav018_textobanner p {
+    font-size: 10px;
+    font-weight: bold;
+}
+	
+p.rav018_textobanner span {
+    display: block;
+    font-size: 13px;
+    float: right;
+    width: 50%;
+    margin: 12px 0 10px 0px;
+    line-height: 1;
+}	
+
+.jumbotron.text-center h3 {
+    text-align: center;
+}
+p.rav018_textobanner strong {
+    font-size: 22px;
+}
+
+.mod_impuestoterritorial {
+    margin: 10px 0 15px 0;
+}
+
+.carousel ol.carousel-indicators {
+    margin: 19px 13px -15px 0;
+    width: 13%;
+}
+
+.jumbotron.text-center .rav018_textobanner p {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5%;
+}
+.jumbotron.text-center h3 {
+    font-size: 18px;
+}
+
+.rav018_textobanner .btnes_rav_018 .btn-default {
+   margin: 10px 2px 0px 0px;
+    width: 85%;
+}
+
+a.btn.btn-lg.btn-default.center-block.btnconsultarav {
+    width: 90%;
+    margin: 10% auto 0% auto;
+}
+
+	}
+	
+	/*iphone4*/
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
+{
+	
+	.jumbotron.text-center .rav018_textobanner {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 2% 0% 10% 0%;
+    margin: 0% 0% 6% 0%;
+}
+   
+.jumbotron.text-center h3 {
+    font-size: 22px;
+}
+
+
+a.btn.btn-lg.btn-default.center-block.btnconsultarav {
+    font-size: 14px;
+}
+
+a.btn.btn-lg.btn-default.center-block.btn-contribuciones {
+    font-size: 13px;
+}
+
+.mod_beneficios018_rav {
+    font-size: 12px;
+    width: 100%;
+}
+
+p.propietarios_texto {
+    font-size: 12px;
+    margin: 4% 0% 7% 0%;
+    text-align: justify;
+    width: 100%;
+}
+
+p.desc_txt_mod {
+    margin: 50px 0 15px 0;
+	font-size:12px
+}
+
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	
+	
+	
+	p.desc_txt_mod {
+    margin: 60px 0 15px 0;
+	font-size:12px
+}
+
+.mod_beneficios018_rav {
+    min-height: 145px;
+}
+
+a.btn.btn-lg.btn-default.center-block.btn-contribuciones {
+    font-size: 16px;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+    margin: 0% 0% 10% 0%;
+}
+
+a.btn.btn-lg.btn-default.center-block.btnconsultarav {
+    font-size: 13px;
+}
+
+.mod_beneficios018_rav_info {
+    padding: 3% 0% 3% 0%;
+}
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+	
+		
+p.desc_txt_mod {
+    margin: 60px 0 15px 0;
+	font-size:12px
+}
+
+.mod_beneficios018_rav {
+    min-height: 145px;
+}
+
+.mod_beneficios018_rav_info {
+    padding: 3% 0% 3% 0%;
+}
+	
+	a.btn.btn-lg.btn-default.center-block.btn-contribuciones {
+    font-size: 16px;
+}
+
+.embed-responsive.embed-responsive-16by9 {
+    margin: 0% 0% 10% 0%;
+}
+a.btn.btn-lg.btn-default.center-block.btnconsultarav {
+    font-size: 13px;
+}
+	
+	
+	
+	}

@@ -1,0 +1,23 @@
+#map-canvas{
+    width: 450px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+#osm-map{
+    width: 500px;
+    height: 000px;
+    margin-top: 20px;
+}
+
+		
+.location {
+   display: block;
+   height: 30px;
+   margin-bottom: 10px;
+}
+
+#map {
+	width: 600px;
+	height: 400px;
+}

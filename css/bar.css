@@ -1,0 +1,55 @@
+.chart {
+	overflow: hidden;
+    width: 450px;
+    height: 300px;
+	padding-left:100px;
+    /*position: absolute;*/
+    /*border: 1px solid black;*/
+}
+.bar-container {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: 250px;
+    display:list-item;
+	list-style: none;
+}
+.bar {
+    background-color: #4fc4f6;
+    width: 50px;
+}
+.total {
+    background-color: #00B050;
+}
+.aporte {
+    background-color: #FDB45C;
+}
+
+.eje-x {
+  padding-left: 10px;
+  padding-top:25px;
+  margin-top:25px;
+}
+
+
+.eje-x li {
+  width: 14%;
+  position: relative;
+  text-align: left;
+  list-style: none;
+}
+
+.eje-x li i {
+  transform: rotatez(-45deg) translatex(-0.1rem);
+  transform-origin: 30% 60%;
+  display: block;
+}
+
+.eje-x li:before {
+  content: '';
+  position: absolute;
+  bottom: 1.9rem;
+  width: 70%;
+  right: 5%;
+  box-shadow: 3px 0 rgba(0, 0, 0, .1), 3px -3px rgba(0, 0, 0, .1);
+}
